@@ -1,13 +1,4 @@
-const restaurants = [
-  {
-    id: 1,
-    name: "Spice Garden",
-    image: "images/spice_garden.jpg", // replace with your fixed image path
-    cuisine: ["Indian", "Chinese"],
-    dishes: [1, 2, 3, 4, 5 ,8 , 10], // dish IDs linked
-  },
-  // ... more restaurants
-];
+
 const foodDatabase = [
   // ==================== PIZZA CATEGORY (1-25) ====================
   {
@@ -16,10 +7,12 @@ const foodDatabase = [
     category: "pizza",
     price: 250,
     rating: 4.5,
-    image: "https://foodish-api.com/images/pizza/pizza1.jpg",
+    image: "assetsimages\first.jpg",
     restaurant: "Spice Garden",
-    description: "Classic Italian pizza with fresh tomatoes, mozzarella cheese, and basil leaves on a thin crust base. Authentic taste straight from Naples with premium ingredients.",
-    ingredients: "Pizza dough, Mozzarella cheese, Fresh tomatoes, Basil leaves, Olive oil, Garlic, Italian herbs",
+    description:
+      "Classic Italian pizza with fresh tomatoes, mozzarella cheese, and basil leaves on a thin crust base. Authentic taste straight from Naples with premium ingredients.",
+    ingredients:
+      "Pizza dough, Mozzarella cheese, Fresh tomatoes, Basil leaves, Olive oil, Garlic, Italian herbs",
     servingSize: "Medium (8 inches, 4 slices)",
     calories: 650,
     prepTime: "15-20 mins",
@@ -34,8 +27,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/pizza/pizza2.jpg",
     restaurant: "The Crust Co.",
-    description: "A meat lover's dream! Generous layers of spicy pepperoni and extra cheese on our signature hand-tossed dough. Bold and savory flavor.",
-    ingredients: "Pizza dough, Tomato sauce, Mozzarella, Pepperoni slices, Oregano, Red pepper flakes",
+    description:
+      "A meat lover's dream! Generous layers of spicy pepperoni and extra cheese on our signature hand-tossed dough. Bold and savory flavor.",
+    ingredients:
+      "Pizza dough, Tomato sauce, Mozzarella, Pepperoni slices, Oregano, Red pepper flakes",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1100,
     prepTime: "20-25 mins",
@@ -50,8 +45,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/pizza/pizza3.jpg",
     restaurant: "Green Slice Pizzeria",
-    description: "Packed with garden-fresh vegetables: bell peppers, onions, mushrooms, olives, and sweet corn. A healthy and flavorful vegetarian choice.",
-    ingredients: "Whole wheat dough, Tomato base, Mozzarella, Bell peppers, Red onions, Mushrooms, Black olives, Sweet corn",
+    description:
+      "Packed with garden-fresh vegetables: bell peppers, onions, mushrooms, olives, and sweet corn. A healthy and flavorful vegetarian choice.",
+    ingredients:
+      "Whole wheat dough, Tomato base, Mozzarella, Bell peppers, Red onions, Mushrooms, Black olives, Sweet corn",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 750,
     prepTime: "18-22 mins",
@@ -66,8 +63,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/pizza/pizza4.jpg",
     restaurant: "The Oven Fired",
-    description: "Tangy BBQ sauce replaces the traditional tomato base, topped with grilled chicken, red onions, and a blend of cheddar and mozzarella cheese.",
-    ingredients: "Pizza dough, BBQ sauce, Mozzarella, Grilled chicken pieces, Red onions, Cheddar cheese",
+    description:
+      "Tangy BBQ sauce replaces the traditional tomato base, topped with grilled chicken, red onions, and a blend of cheddar and mozzarella cheese.",
+    ingredients:
+      "Pizza dough, BBQ sauce, Mozzarella, Grilled chicken pieces, Red onions, Cheddar cheese",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1050,
     prepTime: "20-25 mins",
@@ -82,8 +81,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/pizza/pizza5.jpg",
     restaurant: "Desi Pizzas",
-    description: "An Indian twist! Succulent pieces of tandoori paneer tikka, capsicum, and onions on a spicy base. A fusion delight.",
-    ingredients: "Pizza dough, Spicy tomato base, Mozzarella, Marinated paneer tikka, Capsicum, Red onions, Coriander",
+    description:
+      "An Indian twist! Succulent pieces of tandoori paneer tikka, capsicum, and onions on a spicy base. A fusion delight.",
+    ingredients:
+      "Pizza dough, Spicy tomato base, Mozzarella, Marinated paneer tikka, Capsicum, Red onions, Coriander",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 800,
     prepTime: "18-22 mins",
@@ -98,8 +99,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/pizza/pizza6.jpg",
     restaurant: "Spice Oven",
-    description: "Smoky tandoori chicken, red onions, green chillies, and creamy mint sauce drizzle.",
-    ingredients: "Pizza dough, Tandoori masala base, Mozzarella, Tandoori chicken, Onions, Green chilies, Mint sauce",
+    description:
+      "Smoky tandoori chicken, red onions, green chillies, and creamy mint sauce drizzle.",
+    ingredients:
+      "Pizza dough, Tandoori masala base, Mozzarella, Tandoori chicken, Onions, Green chilies, Mint sauce",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1080,
     prepTime: "20-25 mins",
@@ -114,8 +117,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/pizza/pizza7.jpg",
     restaurant: "Classic Pies",
-    description: "Simple yet delicious combination of fresh mushrooms, black olives, and mozzarella.",
-    ingredients: "Pizza dough, Tomato sauce, Mozzarella, Sliced mushrooms, Black olives, Oregano",
+    description:
+      "Simple yet delicious combination of fresh mushrooms, black olives, and mozzarella.",
+    ingredients:
+      "Pizza dough, Tomato sauce, Mozzarella, Sliced mushrooms, Black olives, Oregano",
     servingSize: "Medium (8 inches, 4 slices)",
     calories: 690,
     prepTime: "15-20 mins",
@@ -130,8 +135,10 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/pizza/pizza8.jpg",
     restaurant: "The Carnivore Club",
-    description: "Loaded with pepperoni, sausage, ham, and bacon. Pure indulgence for meat lovers.",
-    ingredients: "Pizza dough, Tomato sauce, Mozzarella, Pepperoni, Sausage, Ham, Bacon",
+    description:
+      "Loaded with pepperoni, sausage, ham, and bacon. Pure indulgence for meat lovers.",
+    ingredients:
+      "Pizza dough, Tomato sauce, Mozzarella, Pepperoni, Sausage, Ham, Bacon",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1350,
     prepTime: "22-28 mins",
@@ -146,7 +153,8 @@ const foodDatabase = [
     rating: 3.9,
     image: "https://foodish-api.com/images/pizza/pizza9.jpg",
     restaurant: "Tropical Bites",
-    description: "Controversial but loved! Sweet pineapple chunks and savory ham topped with cheese.",
+    description:
+      "Controversial but loved! Sweet pineapple chunks and savory ham topped with cheese.",
     ingredients: "Pizza dough, Tomato sauce, Mozzarella, Ham, Pineapple chunks",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 850,
@@ -162,8 +170,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/pizza/pizza10.jpg",
     restaurant: "Formaggio House",
-    description: "A rich blend of mozzarella, parmesan, gorgonzola, and provolone cheese.",
-    ingredients: "Pizza dough, Olive oil base, Mozzarella, Parmesan, Gorgonzola, Provolone",
+    description:
+      "A rich blend of mozzarella, parmesan, gorgonzola, and provolone cheese.",
+    ingredients:
+      "Pizza dough, Olive oil base, Mozzarella, Parmesan, Gorgonzola, Provolone",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 900,
     prepTime: "18-22 mins",
@@ -178,8 +188,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/pizza/pizza11.jpg",
     restaurant: "Mediterranean Slice",
-    description: "Tangy feta cheese and healthy spinach on a garlic and oil base.",
-    ingredients: "Pizza dough, Garlic oil base, Mozzarella, Feta cheese, Fresh spinach, Red onion",
+    description:
+      "Tangy feta cheese and healthy spinach on a garlic and oil base.",
+    ingredients:
+      "Pizza dough, Garlic oil base, Mozzarella, Feta cheese, Fresh spinach, Red onion",
     servingSize: "Medium (8 inches, 4 slices)",
     calories: 720,
     prepTime: "15-20 mins",
@@ -194,8 +206,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/pizza/pizza12.jpg",
     restaurant: "Fire Eater Pizzeria",
-    description: "Ground spicy Italian sausage, roasted red peppers, and chili flakes for a kick.",
-    ingredients: "Pizza dough, Tomato sauce, Mozzarella, Spicy Italian sausage, Roasted red peppers, Chili flakes",
+    description:
+      "Ground spicy Italian sausage, roasted red peppers, and chili flakes for a kick.",
+    ingredients:
+      "Pizza dough, Tomato sauce, Mozzarella, Spicy Italian sausage, Roasted red peppers, Chili flakes",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1150,
     prepTime: "20-25 mins",
@@ -210,8 +224,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/pizza/pizza13.jpg",
     restaurant: "Artisan Pizza",
-    description: "Basil pesto base, topped with sun-dried tomatoes, mozzarella, and pine nuts.",
-    ingredients: "Pizza dough, Basil pesto, Mozzarella, Sundried tomatoes, Pine nuts",
+    description:
+      "Basil pesto base, topped with sun-dried tomatoes, mozzarella, and pine nuts.",
+    ingredients:
+      "Pizza dough, Basil pesto, Mozzarella, Sundried tomatoes, Pine nuts",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 820,
     prepTime: "18-22 mins",
@@ -227,7 +243,8 @@ const foodDatabase = [
     image: "https://foodish-api.com/images/pizza/pizza14.jpg",
     restaurant: "Creamy Delights",
     description: "Rich Alfredo sauce base, grilled chicken, and fresh parsley.",
-    ingredients: "Pizza dough, Alfredo sauce, Mozzarella, Grilled chicken, Parmesan, Parsley",
+    ingredients:
+      "Pizza dough, Alfredo sauce, Mozzarella, Grilled chicken, Parmesan, Parsley",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1200,
     prepTime: "20-25 mins",
@@ -242,8 +259,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/pizza/pizza15.jpg",
     restaurant: "Garden Fresh Pizza",
-    description: "A healthy and light pizza featuring fresh broccoli florets and sweet corn kernels.",
-    ingredients: "Pizza dough, Light tomato sauce, Mozzarella, Broccoli, Sweet corn",
+    description:
+      "A healthy and light pizza featuring fresh broccoli florets and sweet corn kernels.",
+    ingredients:
+      "Pizza dough, Light tomato sauce, Mozzarella, Broccoli, Sweet corn",
     servingSize: "Medium (8 inches, 4 slices)",
     calories: 680,
     prepTime: "15-20 mins",
@@ -258,8 +277,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/pizza/pizza16.jpg",
     restaurant: "Wing & Pie Co.",
-    description: "Chicken tossed in spicy buffalo sauce, drizzled with ranch dressing.",
-    ingredients: "Pizza dough, Buffalo sauce, Mozzarella, Chicken breast, Ranch dressing",
+    description:
+      "Chicken tossed in spicy buffalo sauce, drizzled with ranch dressing.",
+    ingredients:
+      "Pizza dough, Buffalo sauce, Mozzarella, Chicken breast, Ranch dressing",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1250,
     prepTime: "22-28 mins",
@@ -274,8 +295,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/pizza/pizza17.jpg",
     restaurant: "Italian Dreams",
-    description: "Simple, fresh, and vibrant: mozzarella, fresh tomatoes, and basil after baking.",
-    ingredients: "Pizza dough, Olive oil base, Mozzarella, Fresh tomato slices, Basil leaves, Balsamic glaze",
+    description:
+      "Simple, fresh, and vibrant: mozzarella, fresh tomatoes, and basil after baking.",
+    ingredients:
+      "Pizza dough, Olive oil base, Mozzarella, Fresh tomato slices, Basil leaves, Balsamic glaze",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 780,
     prepTime: "18-22 mins",
@@ -290,8 +313,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/pizza/pizza18.jpg",
     restaurant: "Ocean Delights",
-    description: "Garlic butter base, topped with seasoned prawns, mozzarella, and a hint of lemon.",
-    ingredients: "Pizza dough, Garlic butter, Mozzarella, Prawns, Parsley, Lemon zest",
+    description:
+      "Garlic butter base, topped with seasoned prawns, mozzarella, and a hint of lemon.",
+    ingredients:
+      "Pizza dough, Garlic butter, Mozzarella, Prawns, Parsley, Lemon zest",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1180,
     prepTime: "20-25 mins",
@@ -306,8 +331,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/pizza/pizza19.jpg",
     restaurant: "Heatwave Pizza",
-    description: "Cream cheese, cheddar, bacon bits, and sliced jalapeños. Hot and cheesy.",
-    ingredients: "Pizza dough, Cream cheese base, Cheddar, Mozzarella, Jalapeño slices, Bacon bits",
+    description:
+      "Cream cheese, cheddar, bacon bits, and sliced jalapeños. Hot and cheesy.",
+    ingredients:
+      "Pizza dough, Cream cheese base, Cheddar, Mozzarella, Jalapeño slices, Bacon bits",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 950,
     prepTime: "18-22 mins",
@@ -322,8 +349,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/pizza/pizza20.jpg",
     restaurant: "Gourmet Slice",
-    description: "Thin crust with a light sauce, topped with salty prosciutto and fresh, peppery arugula after baking.",
-    ingredients: "Pizza dough, Tomato sauce, Mozzarella, Prosciutto, Fresh arugula, Parmesan shavings",
+    description:
+      "Thin crust with a light sauce, topped with salty prosciutto and fresh, peppery arugula after baking.",
+    ingredients:
+      "Pizza dough, Tomato sauce, Mozzarella, Prosciutto, Fresh arugula, Parmesan shavings",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1150,
     prepTime: "20-25 mins",
@@ -338,8 +367,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/pizza/pizza21.jpg",
     restaurant: "Desi Street Pizza",
-    description: "A blend of Indian spices, potatoes, and chutney on a pizza base.",
-    ingredients: "Pizza dough, Masala sauce, Mozzarella, Boiled potato cubes, Sev, Chutney",
+    description:
+      "A blend of Indian spices, potatoes, and chutney on a pizza base.",
+    ingredients:
+      "Pizza dough, Masala sauce, Mozzarella, Boiled potato cubes, Sev, Chutney",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 790,
     prepTime: "18-22 mins",
@@ -354,8 +385,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/pizza/pizza22.jpg",
     restaurant: "American Pies",
-    description: "Inspired by the classic sandwich: thinly sliced steak, peppers, onions, and melted provolone.",
-    ingredients: "Pizza dough, White sauce, Provolone, Thinly sliced beef steak, Green peppers, Onions",
+    description:
+      "Inspired by the classic sandwich: thinly sliced steak, peppers, onions, and melted provolone.",
+    ingredients:
+      "Pizza dough, White sauce, Provolone, Thinly sliced beef steak, Green peppers, Onions",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1300,
     prepTime: "22-28 mins",
@@ -370,8 +403,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/pizza/pizza23.jpg",
     restaurant: "Italian Farmhouse",
-    description: "Layers of lightly fried eggplant slices, marinara sauce, and plenty of Parmesan cheese.",
-    ingredients: "Pizza dough, Marinara sauce, Mozzarella, Fried eggplant slices, Parmesan cheese",
+    description:
+      "Layers of lightly fried eggplant slices, marinara sauce, and plenty of Parmesan cheese.",
+    ingredients:
+      "Pizza dough, Marinara sauce, Mozzarella, Fried eggplant slices, Parmesan cheese",
     servingSize: "Medium (10 inches, 6 slices)",
     calories: 810,
     prepTime: "18-22 mins",
@@ -386,8 +421,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/pizza/pizza24.jpg",
     restaurant: "Aztec Crust",
-    description: "Ground seasoned beef, black olives, jalapeños, and a swirl of sour cream after baking.",
-    ingredients: "Pizza dough, Salsa base, Mozzarella, Seasoned ground beef, Black olives, Jalapeños, Sour cream",
+    description:
+      "Ground seasoned beef, black olives, jalapeños, and a swirl of sour cream after baking.",
+    ingredients:
+      "Pizza dough, Salsa base, Mozzarella, Seasoned ground beef, Black olives, Jalapeños, Sour cream",
     servingSize: "Large (12 inches, 8 slices)",
     calories: 1080,
     prepTime: "20-25 mins",
@@ -402,7 +439,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/pizza/pizza25.jpg",
     restaurant: "The Bread Factory",
-    description: "A simple, soft base topped with rich garlic butter, herbs, and mozzarella cheese.",
+    description:
+      "A simple, soft base topped with rich garlic butter, herbs, and mozzarella cheese.",
     ingredients: "Pizza dough, Garlic butter, Mozzarella, Oregano, Parsley",
     servingSize: "Medium (8 inches, 4 slices)",
     calories: 690,
@@ -420,8 +458,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/burgers/burger1.jpg",
     restaurant: "Patty Heaven",
-    description: "A juicy beef patty, melted American cheese, lettuce, tomato, onion, and pickles on a toasted sesame bun. Timeless American flavor.",
-    ingredients: "Beef patty, Sesame bun, American cheese, Lettuce, Tomato, Red onion, Pickles, Mayo, Ketchup",
+    description:
+      "A juicy beef patty, melted American cheese, lettuce, tomato, onion, and pickles on a toasted sesame bun. Timeless American flavor.",
+    ingredients:
+      "Beef patty, Sesame bun, American cheese, Lettuce, Tomato, Red onion, Pickles, Mayo, Ketchup",
     servingSize: "Single burger",
     calories: 780,
     prepTime: "10-15 mins",
@@ -436,8 +476,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/burgers/burger2.jpg",
     restaurant: "Burger Town",
-    description: "Crispy fried paneer patty coated in a spicy batter, topped with creamy mint mayo and fresh lettuce. Vegetarian spicy favorite.",
-    ingredients: "Paneer patty, Burger bun, Spicy coating, Mint mayonnaise, Lettuce, Onion slices",
+    description:
+      "Crispy fried paneer patty coated in a spicy batter, topped with creamy mint mayo and fresh lettuce. Vegetarian spicy favorite.",
+    ingredients:
+      "Paneer patty, Burger bun, Spicy coating, Mint mayonnaise, Lettuce, Onion slices",
     servingSize: "Single burger",
     calories: 620,
     prepTime: "12-18 mins",
@@ -452,8 +494,10 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/burgers/burger3.jpg",
     restaurant: "The Grill Master",
-    description: "Two beef patties, double cheese, and a generous heap of crispy bacon strips. Served with our signature smokey sauce.",
-    ingredients: "Two Beef patties, Toasted bun, Cheddar cheese, Bacon strips, Smokey BBQ sauce, Pickles",
+    description:
+      "Two beef patties, double cheese, and a generous heap of crispy bacon strips. Served with our signature smokey sauce.",
+    ingredients:
+      "Two Beef patties, Toasted bun, Cheddar cheese, Bacon strips, Smokey BBQ sauce, Pickles",
     servingSize: "Double-stack burger",
     calories: 1250,
     prepTime: "15-20 mins",
@@ -468,8 +512,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/burgers/burger4.jpg",
     restaurant: "Local Eats",
-    description: "A beloved Indian street food burger. Crispy potato patty (Aloo Tikki), tangy tamarind and mint chutney, and fresh vegetables.",
-    ingredients: "Potato patty, Bun, Tamarind chutney, Mint chutney, Onions, Tomato, Lettuce",
+    description:
+      "A beloved Indian street food burger. Crispy potato patty (Aloo Tikki), tangy tamarind and mint chutney, and fresh vegetables.",
+    ingredients:
+      "Potato patty, Bun, Tamarind chutney, Mint chutney, Onions, Tomato, Lettuce",
     servingSize: "Single burger",
     calories: 480,
     prepTime: "8-12 mins",
@@ -484,8 +530,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/burgers/burger5.jpg",
     restaurant: "The Gourmet Spot",
-    description: "Sautéed mushrooms, melted Swiss cheese, and a premium beef patty. Rich, earthy, and savory perfection.",
-    ingredients: "Beef patty, Swiss cheese, Sautéed mushrooms, Garlic aioli, Toasted bun",
+    description:
+      "Sautéed mushrooms, melted Swiss cheese, and a premium beef patty. Rich, earthy, and savory perfection.",
+    ingredients:
+      "Beef patty, Swiss cheese, Sautéed mushrooms, Garlic aioli, Toasted bun",
     servingSize: "Single burger",
     calories: 850,
     prepTime: "12-18 mins",
@@ -500,8 +548,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/burgers/burger6.jpg",
     restaurant: "Healthy Grills",
-    description: "Marinated grilled chicken breast, fresh lettuce, and low-fat mayo on a whole wheat bun. A healthier option.",
-    ingredients: "Grilled chicken breast, Whole wheat bun, Lettuce, Tomato, Low-fat mayo, Herbs",
+    description:
+      "Marinated grilled chicken breast, fresh lettuce, and low-fat mayo on a whole wheat bun. A healthier option.",
+    ingredients:
+      "Grilled chicken breast, Whole wheat bun, Lettuce, Tomato, Low-fat mayo, Herbs",
     servingSize: "Single burger",
     calories: 550,
     prepTime: "10-15 mins",
@@ -516,8 +566,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/burgers/burger7.jpg",
     restaurant: "Garden Patties",
-    description: "A homemade patty of mixed beans, corn, and spices, served with avocado crema.",
-    ingredients: "Mixed bean patty, Whole wheat bun, Avocado crema, Lettuce, Tomato, Corn",
+    description:
+      "A homemade patty of mixed beans, corn, and spices, served with avocado crema.",
+    ingredients:
+      "Mixed bean patty, Whole wheat bun, Avocado crema, Lettuce, Tomato, Corn",
     servingSize: "Single burger",
     calories: 520,
     prepTime: "10-15 mins",
@@ -532,7 +584,8 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/burgers/burger8.jpg",
     restaurant: "BBQ Pit Stop",
-    description: "Slow-cooked pulled pork coated in sweet and smoky BBQ sauce, topped with coleslaw.",
+    description:
+      "Slow-cooked pulled pork coated in sweet and smoky BBQ sauce, topped with coleslaw.",
     ingredients: "Pulled pork, Brioche bun, Smoky BBQ sauce, Coleslaw, Pickles",
     servingSize: "Single burger",
     calories: 900,
@@ -548,7 +601,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/burgers/burger9.jpg",
     restaurant: "Seaside Shack",
-    description: "Flaky white fish fillet, lightly battered and fried, served with tartar sauce and lettuce.",
+    description:
+      "Flaky white fish fillet, lightly battered and fried, served with tartar sauce and lettuce.",
     ingredients: "Fish fillet, Burger bun, Tartar sauce, Lettuce, Cheese slice",
     servingSize: "Single burger",
     calories: 680,
@@ -564,8 +618,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/burgers/burger10.jpg",
     restaurant: "Taco 'n' Patty",
-    description: "Beef patty topped with guacamole, salsa, pepper jack cheese, and crispy tortilla strips.",
-    ingredients: "Beef patty, Brioche bun, Guacamole, Salsa, Pepper jack cheese, Tortilla strips",
+    description:
+      "Beef patty topped with guacamole, salsa, pepper jack cheese, and crispy tortilla strips.",
+    ingredients:
+      "Beef patty, Brioche bun, Guacamole, Salsa, Pepper jack cheese, Tortilla strips",
     servingSize: "Single burger",
     calories: 880,
     prepTime: "12-18 mins",
@@ -580,8 +636,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/burgers/burger11.jpg",
     restaurant: "Middle East Munchies",
-    description: "Crispy chickpea falafel patty with fresh hummus and a cool tzatziki drizzle.",
-    ingredients: "Falafel patty, Pita bun, Hummus, Tzatziki sauce, Cucumber, Tomato",
+    description:
+      "Crispy chickpea falafel patty with fresh hummus and a cool tzatziki drizzle.",
+    ingredients:
+      "Falafel patty, Pita bun, Hummus, Tzatziki sauce, Cucumber, Tomato",
     servingSize: "Single burger",
     calories: 580,
     prepTime: "10-15 mins",
@@ -596,8 +654,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/burgers/burger12.jpg",
     restaurant: "Shepherd's Delight",
-    description: "Juicy lamb patty seasoned with Mediterranean spices and topped with goat cheese.",
-    ingredients: "Lamb patty, Brioche bun, Goat cheese, Arugula, Harissa mayo, Spices",
+    description:
+      "Juicy lamb patty seasoned with Mediterranean spices and topped with goat cheese.",
+    ingredients:
+      "Lamb patty, Brioche bun, Goat cheese, Arugula, Harissa mayo, Spices",
     servingSize: "Single burger",
     calories: 950,
     prepTime: "15-20 mins",
@@ -612,8 +672,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/burgers/burger13.jpg",
     restaurant: "The Forest Feast",
-    description: "Marinated Portobello cap grilled and topped with roasted red peppers and pesto.",
-    ingredients: "Portobello mushroom cap, Burger bun, Pesto, Roasted red peppers, Mozzarella",
+    description:
+      "Marinated Portobello cap grilled and topped with roasted red peppers and pesto.",
+    ingredients:
+      "Portobello mushroom cap, Burger bun, Pesto, Roasted red peppers, Mozzarella",
     servingSize: "Single burger",
     calories: 600,
     prepTime: "12-18 mins",
@@ -628,8 +690,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/burgers/burger14.jpg",
     restaurant: "Asian Fusion Burger",
-    description: "Chicken patty glazed with sweet teriyaki sauce, topped with grilled pineapple.",
-    ingredients: "Chicken patty, Burger bun, Teriyaki sauce, Grilled pineapple, Lettuce, Ginger",
+    description:
+      "Chicken patty glazed with sweet teriyaki sauce, topped with grilled pineapple.",
+    ingredients:
+      "Chicken patty, Burger bun, Teriyaki sauce, Grilled pineapple, Lettuce, Ginger",
     servingSize: "Single burger",
     calories: 700,
     prepTime: "10-15 mins",
@@ -644,8 +708,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/burgers/burger15.jpg",
     restaurant: "Late Night Bites",
-    description: "Beef patty, cheese, bacon, and a fried egg. The ultimate morning-after cure.",
-    ingredients: "Beef patty, Bun, Cheddar cheese, Bacon, Fried egg, Hash brown, Special sauce",
+    description:
+      "Beef patty, cheese, bacon, and a fried egg. The ultimate morning-after cure.",
+    ingredients:
+      "Beef patty, Bun, Cheddar cheese, Bacon, Fried egg, Hash brown, Special sauce",
     servingSize: "Single indulgence",
     calories: 1350,
     prepTime: "15-20 mins",
@@ -660,8 +726,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/burgers/burger16.jpg",
     restaurant: "Desi Burger House",
-    description: "North Indian kidney bean (Rajma) patty, served with spicy onion rings and tangy sauce.",
-    ingredients: "Rajma patty, Burger bun, Onion rings, Spicy sauce, Lettuce, Tomato",
+    description:
+      "North Indian kidney bean (Rajma) patty, served with spicy onion rings and tangy sauce.",
+    ingredients:
+      "Rajma patty, Burger bun, Onion rings, Spicy sauce, Lettuce, Tomato",
     servingSize: "Single burger",
     calories: 510,
     prepTime: "10-15 mins",
@@ -676,8 +744,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/burgers/burger17.jpg",
     restaurant: "Fried Fowl",
-    description: "Thick, crispy fried chicken fillet, lettuce, and mayo. The classic zinger.",
-    ingredients: "Fried chicken fillet, Sesame bun, Lettuce, Mayonnaise, Secret spices",
+    description:
+      "Thick, crispy fried chicken fillet, lettuce, and mayo. The classic zinger.",
+    ingredients:
+      "Fried chicken fillet, Sesame bun, Lettuce, Mayonnaise, Secret spices",
     servingSize: "Single burger",
     calories: 750,
     prepTime: "10-15 mins",
@@ -692,7 +762,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/burgers/burger18.jpg",
     restaurant: "The Bold Palate",
-    description: "Beef patty topped with crumbled blue cheese and caramelized onions. Bold flavor profile.",
+    description:
+      "Beef patty topped with crumbled blue cheese and caramelized onions. Bold flavor profile.",
     ingredients: "Beef patty, Bun, Blue cheese, Caramelized onions, Arugula",
     servingSize: "Single burger",
     calories: 890,
@@ -708,8 +779,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/burgers/burger19.jpg",
     restaurant: "Wrap & Roll",
-    description: "A patty made from spiced vegetable mince, served with tahini sauce and pickled veggies.",
-    ingredients: "Veggie mince patty, Bun, Tahini sauce, Pickled turnip, Tomato, Onion",
+    description:
+      "A patty made from spiced vegetable mince, served with tahini sauce and pickled veggies.",
+    ingredients:
+      "Veggie mince patty, Bun, Tahini sauce, Pickled turnip, Tomato, Onion",
     servingSize: "Single burger",
     calories: 610,
     prepTime: "10-15 mins",
@@ -724,8 +797,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/burgers/burger20.jpg",
     restaurant: "Heat Zone",
-    description: "Grilled chicken marinated in fiery Peri Peri sauce, with fresh coleslaw.",
-    ingredients: "Grilled chicken, Bun, Peri Peri sauce, Coleslaw, Lettuce, Mayo",
+    description:
+      "Grilled chicken marinated in fiery Peri Peri sauce, with fresh coleslaw.",
+    ingredients:
+      "Grilled chicken, Bun, Peri Peri sauce, Coleslaw, Lettuce, Mayo",
     servingSize: "Single burger",
     calories: 720,
     prepTime: "10-15 mins",
@@ -740,8 +815,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/burgers/burger21.jpg",
     restaurant: "Brunch Burgers",
-    description: "A light burger with fresh avocado slices and a perfectly fried egg.",
-    ingredients: "Beef patty (optional: Veggie), Bun, Fried egg, Avocado slices, Rocket leaves",
+    description:
+      "A light burger with fresh avocado slices and a perfectly fried egg.",
+    ingredients:
+      "Beef patty (optional: Veggie), Bun, Fried egg, Avocado slices, Rocket leaves",
     servingSize: "Single burger",
     calories: 780,
     prepTime: "12-18 mins",
@@ -756,8 +833,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/burgers/burger22.jpg",
     restaurant: "Desert Grill",
-    description: "Smoky chipotle mayo, cheddar cheese, and crispy fried onions.",
-    ingredients: "Beef patty, Bun, Chipotle mayo, Cheddar cheese, Crispy fried onions",
+    description:
+      "Smoky chipotle mayo, cheddar cheese, and crispy fried onions.",
+    ingredients:
+      "Beef patty, Bun, Chipotle mayo, Cheddar cheese, Crispy fried onions",
     servingSize: "Single burger",
     calories: 910,
     prepTime: "12-18 mins",
@@ -772,7 +851,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/burgers/burger23.jpg",
     restaurant: "The Green Grill",
-    description: "A mild and creamy patty made from fresh spinach and sweet corn.",
+    description:
+      "A mild and creamy patty made from fresh spinach and sweet corn.",
     ingredients: "Spinach corn patty, Burger bun, Creamy sauce, Lettuce, Onion",
     servingSize: "Single burger",
     calories: 530,
@@ -788,8 +868,10 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/burgers/burger24.jpg",
     restaurant: "Big Bites Inc.",
-    description: "Three patties, three slices of cheese, and all the fixings. A true monster burger.",
-    ingredients: "Three beef patties, Three cheese slices, Special sauce, Lettuce, Tomato, Pickles",
+    description:
+      "Three patties, three slices of cheese, and all the fixings. A true monster burger.",
+    ingredients:
+      "Three beef patties, Three cheese slices, Special sauce, Lettuce, Tomato, Pickles",
     servingSize: "Triple-stack burger",
     calories: 1500,
     prepTime: "18-25 mins",
@@ -804,8 +886,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/burgers/burger25.jpg",
     restaurant: "Olive Tree Cafe",
-    description: "Sun-dried tomato and zucchini patty with a touch of olive tapenade.",
-    ingredients: "Veggie patty, Bun, Olive tapenade, Sun-dried tomatoes, Zucchini, Arugula",
+    description:
+      "Sun-dried tomato and zucchini patty with a touch of olive tapenade.",
+    ingredients:
+      "Veggie patty, Bun, Olive tapenade, Sun-dried tomatoes, Zucchini, Arugula",
     servingSize: "Single burger",
     calories: 590,
     prepTime: "10-15 mins",
@@ -822,8 +906,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/biryani/biryani1.jpg",
     restaurant: "Nizam's Kitchen",
-    description: "Authentic 'Dum' style biryani with marinated chicken, long-grain basmati rice, saffron, and traditional spices. Served with Raita.",
-    ingredients: "Basmati rice, Chicken, Yogurt, Onion, Ginger-garlic paste, Saffron, Cardamom, Cloves, Mint, Coriander",
+    description:
+      "Authentic 'Dum' style biryani with marinated chicken, long-grain basmati rice, saffron, and traditional spices. Served with Raita.",
+    ingredients:
+      "Basmati rice, Chicken, Yogurt, Onion, Ginger-garlic paste, Saffron, Cardamom, Cloves, Mint, Coriander",
     servingSize: "Full portion (serves 1-2)",
     calories: 950,
     prepTime: "30-45 mins (ready to serve)",
@@ -838,8 +924,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/biryani/biryani2.jpg",
     restaurant: "Spice Route",
-    description: "Aromatic rice cooked with assorted fresh vegetables like carrots, beans, peas, and potatoes, mildly spiced and layered for flavor.",
-    ingredients: "Basmati rice, Mixed vegetables (Carrot, Peas, Beans, Potato), Curd, Biryani masala, Fried onions, Ghee",
+    description:
+      "Aromatic rice cooked with assorted fresh vegetables like carrots, beans, peas, and potatoes, mildly spiced and layered for flavor.",
+    ingredients:
+      "Basmati rice, Mixed vegetables (Carrot, Peas, Beans, Potato), Curd, Biryani masala, Fried onions, Ghee",
     servingSize: "Full portion (serves 1-2)",
     calories: 700,
     prepTime: "25-35 mins (ready to serve)",
@@ -854,8 +942,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/biryani/biryani3.jpg",
     restaurant: "The Royal Feast",
-    description: "Tender pieces of mutton marinated overnight and slow-cooked with fragrant basmati rice and a rich blend of traditional spices.",
-    ingredients: "Basmati rice, Mutton pieces, Yogurt, Star anise, Cinnamon, Bay leaf, Brown onion paste, Kewra water",
+    description:
+      "Tender pieces of mutton marinated overnight and slow-cooked with fragrant basmati rice and a rich blend of traditional spices.",
+    ingredients:
+      "Basmati rice, Mutton pieces, Yogurt, Star anise, Cinnamon, Bay leaf, Brown onion paste, Kewra water",
     servingSize: "Full portion (serves 1-2)",
     calories: 1100,
     prepTime: "40-50 mins (ready to serve)",
@@ -870,8 +960,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/biryani/biryani4.jpg",
     restaurant: "Veggie Delight",
-    description: "Soft cubes of paneer cooked in a rich, flavorful gravy and layered with basmati rice. A wholesome vegetarian alternative.",
-    ingredients: "Basmati rice, Paneer cubes, Tomato puree, Curd, Biryani masala, Cashew nuts, Raisins",
+    description:
+      "Soft cubes of paneer cooked in a rich, flavorful gravy and layered with basmati rice. A wholesome vegetarian alternative.",
+    ingredients:
+      "Basmati rice, Paneer cubes, Tomato puree, Curd, Biryani masala, Cashew nuts, Raisins",
     servingSize: "Full portion (serves 1-2)",
     calories: 800,
     prepTime: "25-35 mins (ready to serve)",
@@ -886,8 +978,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/biryani/biryani5.jpg",
     restaurant: "Biryani Express",
-    description: "Hard-boiled eggs cooked in a spicy masala and layered with aromatic rice. Simple, satisfying, and delicious.",
-    ingredients: "Basmati rice, Hard-boiled eggs, Onion-tomato masala, Ginger-garlic, Turmeric, Red chili powder, Garam masala",
+    description:
+      "Hard-boiled eggs cooked in a spicy masala and layered with aromatic rice. Simple, satisfying, and delicious.",
+    ingredients:
+      "Basmati rice, Hard-boiled eggs, Onion-tomato masala, Ginger-garlic, Turmeric, Red chili powder, Garam masala",
     servingSize: "Full portion (serves 1-2)",
     calories: 750,
     prepTime: "20-30 mins (ready to serve)",
@@ -902,8 +996,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/biryani/biryani6.jpg",
     restaurant: "Sea Spice Kitchen",
-    description: "Fish marinated in regional coastal spices, layered with rice and flavored with coconut milk.",
-    ingredients: "Basmati rice, Fish fillets, Coastal spices, Coconut milk, Curry leaves, Turmeric",
+    description:
+      "Fish marinated in regional coastal spices, layered with rice and flavored with coconut milk.",
+    ingredients:
+      "Basmati rice, Fish fillets, Coastal spices, Coconut milk, Curry leaves, Turmeric",
     servingSize: "Full portion (serves 1-2)",
     calories: 900,
     prepTime: "30-40 mins (ready to serve)",
@@ -918,8 +1014,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/biryani/biryani7.jpg",
     restaurant: "Bengal Heritage",
-    description: "Light and aromatic rice with a large potato and single piece of chicken/mutton, and a hint of sweet essence (attar).",
-    ingredients: "Basmati rice, Chicken/Mutton, Potato, Attar (Essence), Saffron, Yogurt, Spices",
+    description:
+      "Light and aromatic rice with a large potato and single piece of chicken/mutton, and a hint of sweet essence (attar).",
+    ingredients:
+      "Basmati rice, Chicken/Mutton, Potato, Attar (Essence), Saffron, Yogurt, Spices",
     servingSize: "Full portion (serves 1)",
     calories: 850,
     prepTime: "30-45 mins (ready to serve)",
@@ -934,8 +1032,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/biryani/biryani8.jpg",
     restaurant: "The Fungi Feast",
-    description: "Earthy mushrooms cooked in a semi-dry masala and layered with basmati rice. Flavorful and vegetarian.",
-    ingredients: "Basmati rice, Sliced mushrooms, Onion, Tomato, Ginger-garlic, Biryani masala, Mint",
+    description:
+      "Earthy mushrooms cooked in a semi-dry masala and layered with basmati rice. Flavorful and vegetarian.",
+    ingredients:
+      "Basmati rice, Sliced mushrooms, Onion, Tomato, Ginger-garlic, Biryani masala, Mint",
     servingSize: "Full portion (serves 1-2)",
     calories: 720,
     prepTime: "25-35 mins (ready to serve)",
@@ -950,8 +1050,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/biryani/biryani9.jpg",
     restaurant: "Crustacean Kitchen",
-    description: "Juicy prawns marinated in yogurt and spices, layered with fragrant rice. A rich coastal specialty.",
-    ingredients: "Basmati rice, Prawns, Yogurt, Ginger, Garlic, Chili powder, Onion, Tomato, Spices",
+    description:
+      "Juicy prawns marinated in yogurt and spices, layered with fragrant rice. A rich coastal specialty.",
+    ingredients:
+      "Basmati rice, Prawns, Yogurt, Ginger, Garlic, Chili powder, Onion, Tomato, Spices",
     servingSize: "Full portion (serves 1-2)",
     calories: 1000,
     prepTime: "35-45 mins (ready to serve)",
@@ -966,8 +1068,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/biryani/biryani10.jpg",
     restaurant: "Nawab's Table",
-    description: "Subtly flavored biryani with delicate spices, milk, and a fragrant 'ittar'. Less spicy and richer than Hyderabadi.",
-    ingredients: "Basmati rice, Chicken/Mutton, Milk, Kewra water, Rose water, Mild spices, Ghee",
+    description:
+      "Subtly flavored biryani with delicate spices, milk, and a fragrant 'ittar'. Less spicy and richer than Hyderabadi.",
+    ingredients:
+      "Basmati rice, Chicken/Mutton, Milk, Kewra water, Rose water, Mild spices, Ghee",
     servingSize: "Full portion (serves 1-2)",
     calories: 980,
     prepTime: "40-50 mins (ready to serve)",
@@ -982,8 +1086,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/biryani/biryani11.jpg",
     restaurant: "Mumbai Spice Co.",
-    description: "Spicier and tangier than other variants, often including dried plums (aloo bukhara) and fried potato cubes.",
-    ingredients: "Basmati rice, Chicken/Mutton, Bombay Biryani masala, Dried plums, Fried potato cubes, Tomato",
+    description:
+      "Spicier and tangier than other variants, often including dried plums (aloo bukhara) and fried potato cubes.",
+    ingredients:
+      "Basmati rice, Chicken/Mutton, Bombay Biryani masala, Dried plums, Fried potato cubes, Tomato",
     servingSize: "Full portion (serves 1-2)",
     calories: 920,
     prepTime: "30-40 mins (ready to serve)",
@@ -998,8 +1104,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/biryani/biryani12.jpg",
     restaurant: "Vegan Spice Hub",
-    description: "A high-protein vegetarian biryani using textured vegetable protein (soya chunks) instead of meat.",
-    ingredients: "Basmati rice, Soya chunks, Onion, Tomato, Curd, Biryani masala, Capsicum",
+    description:
+      "A high-protein vegetarian biryani using textured vegetable protein (soya chunks) instead of meat.",
+    ingredients:
+      "Basmati rice, Soya chunks, Onion, Tomato, Curd, Biryani masala, Capsicum",
     servingSize: "Full portion (serves 1-2)",
     calories: 680,
     prepTime: "25-35 mins (ready to serve)",
@@ -1014,8 +1122,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/biryani/biryani13.jpg",
     restaurant: "Valley of Spices",
-    description: "A sweet and mild rice dish cooked with milk, nuts, dry fruits, and fresh fruits like pineapple and pomegranate. (Technically a Pulao, not a Biryani, but often categorized with rice dishes).",
-    ingredients: "Basmati rice, Milk, Sugar, Cashews, Raisins, Almonds, Pineapple, Pomegranate seeds, Spices",
+    description:
+      "A sweet and mild rice dish cooked with milk, nuts, dry fruits, and fresh fruits like pineapple and pomegranate. (Technically a Pulao, not a Biryani, but often categorized with rice dishes).",
+    ingredients:
+      "Basmati rice, Milk, Sugar, Cashews, Raisins, Almonds, Pineapple, Pomegranate seeds, Spices",
     servingSize: "Full portion (serves 1-2)",
     calories: 750,
     prepTime: "20-30 mins (ready to serve)",
@@ -1030,8 +1140,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/biryani/biryani14.jpg",
     restaurant: "Coastal Treat",
-    description: "Made with Kaima rice (short grain), a generous amount of fried onions, and distinct South Indian spices. Less saffron, more green chili paste.",
-    ingredients: "Kaima rice, Chicken/Mutton, Green chili paste, Onion, Mint, Coriander, Malabar spices",
+    description:
+      "Made with Kaima rice (short grain), a generous amount of fried onions, and distinct South Indian spices. Less saffron, more green chili paste.",
+    ingredients:
+      "Kaima rice, Chicken/Mutton, Green chili paste, Onion, Mint, Coriander, Malabar spices",
     servingSize: "Full portion (serves 1-2)",
     calories: 970,
     prepTime: "30-45 mins (ready to serve)",
@@ -1046,8 +1158,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/biryani/biryani15.jpg",
     restaurant: "Tamil Nadu Delicacy",
-    description: "Uses Seeraga Samba rice and ground mutton/chicken. Known for its intense flavor and unique preparation style.",
-    ingredients: "Seeraga Samba rice, Mutton/Chicken, Ground spices, Curd, Lemon juice, Onion, Ginger-garlic",
+    description:
+      "Uses Seeraga Samba rice and ground mutton/chicken. Known for its intense flavor and unique preparation style.",
+    ingredients:
+      "Seeraga Samba rice, Mutton/Chicken, Ground spices, Curd, Lemon juice, Onion, Ginger-garlic",
     servingSize: "Full portion (serves 1-2)",
     calories: 1050,
     prepTime: "35-45 mins (ready to serve)",
@@ -1062,8 +1176,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/biryani/biryani16.jpg",
     restaurant: "Royal Cuisine",
-    description: "Slow-cooked in an earthen pot (handi) with rich cashew paste, cream, and tender meat. Rich and mild.",
-    ingredients: "Basmati rice, Chicken/Mutton, Cashew paste, Cream, Mild spices, Cardamom, Bay leaves",
+    description:
+      "Slow-cooked in an earthen pot (handi) with rich cashew paste, cream, and tender meat. Rich and mild.",
+    ingredients:
+      "Basmati rice, Chicken/Mutton, Cashew paste, Cream, Mild spices, Cardamom, Bay leaves",
     servingSize: "Full portion (serves 1-2)",
     calories: 1020,
     prepTime: "40-50 mins (ready to serve)",
@@ -1078,8 +1194,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/biryani/biryani17.jpg",
     restaurant: "The Vegan Pot",
-    description: "Young jackfruit (kathal) chunks cooked to mimic meat texture, layered with rice and biryani spices. A popular vegetarian substitute.",
-    ingredients: "Basmati rice, Young Jackfruit (Kathal), Onion, Ginger-garlic, Biryani masala, Curd, Mint",
+    description:
+      "Young jackfruit (kathal) chunks cooked to mimic meat texture, layered with rice and biryani spices. A popular vegetarian substitute.",
+    ingredients:
+      "Basmati rice, Young Jackfruit (Kathal), Onion, Ginger-garlic, Biryani masala, Curd, Mint",
     servingSize: "Full portion (serves 1-2)",
     calories: 740,
     prepTime: "25-35 mins (ready to serve)",
@@ -1094,8 +1212,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/biryani/biryani18.jpg",
     restaurant: "Southern Spice",
-    description: "Made with Seeraga Samba rice (Jeera Samba) and a distinct tomato-based, medium-spicy gravy. Unique South Indian flavor.",
-    ingredients: "Seeraga Samba rice, Chicken/Mutton, Tomato, Green chilies, Mint, Coriander, Spices",
+    description:
+      "Made with Seeraga Samba rice (Jeera Samba) and a distinct tomato-based, medium-spicy gravy. Unique South Indian flavor.",
+    ingredients:
+      "Seeraga Samba rice, Chicken/Mutton, Tomato, Green chilies, Mint, Coriander, Spices",
     servingSize: "Full portion (serves 1-2)",
     calories: 930,
     prepTime: "30-40 mins (ready to serve)",
@@ -1110,8 +1230,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/biryani/biryani19.jpg",
     restaurant: "Sindh Kitchen",
-    description: "Features a rich array of spices, yogurt, potatoes, and sometimes sour prunes for a tangy touch.",
-    ingredients: "Basmati rice, Chicken/Mutton, Yogurt, Potatoes, Sour plums (Aloo Bukhara), Green chilies",
+    description:
+      "Features a rich array of spices, yogurt, potatoes, and sometimes sour prunes for a tangy touch.",
+    ingredients:
+      "Basmati rice, Chicken/Mutton, Yogurt, Potatoes, Sour plums (Aloo Bukhara), Green chilies",
     servingSize: "Full portion (serves 1-2)",
     calories: 960,
     prepTime: "30-45 mins (ready to serve)",
@@ -1126,8 +1248,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/biryani/biryani20.jpg",
     restaurant: "Simple Rice Dishes",
-    description: "Lightly spiced, aromatic basmati rice cooked with fresh green peas. A simple and soothing dish.",
-    ingredients: "Basmati rice, Green peas, Ghee, Whole spices (Cinnamon, Cardamom), Onion",
+    description:
+      "Lightly spiced, aromatic basmati rice cooked with fresh green peas. A simple and soothing dish.",
+    ingredients:
+      "Basmati rice, Green peas, Ghee, Whole spices (Cinnamon, Cardamom), Onion",
     servingSize: "Full portion (serves 1-2)",
     calories: 650,
     prepTime: "20-30 mins (ready to serve)",
@@ -1144,8 +1268,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/chinese/chinese1.jpg",
     restaurant: "Dragon Wok",
-    description: "Crispy fried chicken tossed in a spicy, tangy sauce with bell peppers, onions, and green chilies. A classic Indo-Chinese appetizer.",
-    ingredients: "Chicken pieces, Corn flour, Soy sauce, Vinegar, Green chili, Capsicum, Onion, Ginger, Garlic",
+    description:
+      "Crispy fried chicken tossed in a spicy, tangy sauce with bell peppers, onions, and green chilies. A classic Indo-Chinese appetizer.",
+    ingredients:
+      "Chicken pieces, Corn flour, Soy sauce, Vinegar, Green chili, Capsicum, Onion, Ginger, Garlic",
     servingSize: "Appetizer (serves 1-2)",
     calories: 680,
     prepTime: "15-20 mins",
@@ -1160,8 +1286,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/chinese/chinese2.jpg",
     restaurant: "Noodle House",
-    description: "Wok-tossed noodles with shredded cabbage, carrots, bell peppers, and a light soy sauce. Simple, savory, and perfectly cooked.",
-    ingredients: "Noodles, Cabbage, Carrot, Capsicum, Soy sauce, Vinegar, Sesame oil, Spring onion",
+    description:
+      "Wok-tossed noodles with shredded cabbage, carrots, bell peppers, and a light soy sauce. Simple, savory, and perfectly cooked.",
+    ingredients:
+      "Noodles, Cabbage, Carrot, Capsicum, Soy sauce, Vinegar, Sesame oil, Spring onion",
     servingSize: "Main course (serves 1)",
     calories: 550,
     prepTime: "10-15 mins",
@@ -1176,8 +1304,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/chinese/chinese3.jpg",
     restaurant: "Panda Bowl",
-    description: "Stir-fried rice with tender chicken chunks, scrambled egg, and a mix of fresh vegetables, seasoned with light and dark soy sauce.",
-    ingredients: "Boiled rice, Chicken chunks, Egg, Peas, Carrot, Onion, Soy sauce, Ginger",
+    description:
+      "Stir-fried rice with tender chicken chunks, scrambled egg, and a mix of fresh vegetables, seasoned with light and dark soy sauce.",
+    ingredients:
+      "Boiled rice, Chicken chunks, Egg, Peas, Carrot, Onion, Soy sauce, Ginger",
     servingSize: "Main course (serves 1)",
     calories: 650,
     prepTime: "10-15 mins",
@@ -1192,8 +1322,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/chinese/chinese4.jpg",
     restaurant: "Red Lantern",
-    description: "Deep-fried vegetable balls (Manchurian) served in a thick, savory, soy-based gravy. Best enjoyed with fried rice or noodles.",
-    ingredients: "Cabbage, Carrot, Maida (flour), Ginger, Garlic, Soy sauce, Cornflour, Spring onion, Water",
+    description:
+      "Deep-fried vegetable balls (Manchurian) served in a thick, savory, soy-based gravy. Best enjoyed with fried rice or noodles.",
+    ingredients:
+      "Cabbage, Carrot, Maida (flour), Ginger, Garlic, Soy sauce, Cornflour, Spring onion, Water",
     servingSize: "Side dish (serves 1-2)",
     calories: 600,
     prepTime: "15-20 mins",
@@ -1208,8 +1340,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/chinese/chinese5.jpg",
     restaurant: "Spicy Wok",
-    description: "Succulent prawns tossed in a fiery and fragrant Szechuan sauce, made with dried chilies and Szechuan peppercorns. Very spicy!",
-    ingredients: "Prawns, Szechuan chili paste, Dried red chilies, Szechuan peppercorns, Ginger, Garlic, Rice wine vinegar",
+    description:
+      "Succulent prawns tossed in a fiery and fragrant Szechuan sauce, made with dried chilies and Szechuan peppercorns. Very spicy!",
+    ingredients:
+      "Prawns, Szechuan chili paste, Dried red chilies, Szechuan peppercorns, Ginger, Garlic, Rice wine vinegar",
     servingSize: "Appetizer (serves 1-2)",
     calories: 720,
     prepTime: "18-22 mins",
@@ -1224,8 +1358,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/chinese/chinese6.jpg",
     restaurant: "Fiery Noodles",
-    description: "Rice stir-fried with mixed vegetables and a bold, spicy Szechuan sauce. A fiery vegetarian option.",
-    ingredients: "Rice, Mixed vegetables, Szechuan sauce, Garlic, Vinegar, Spring onion",
+    description:
+      "Rice stir-fried with mixed vegetables and a bold, spicy Szechuan sauce. A fiery vegetarian option.",
+    ingredients:
+      "Rice, Mixed vegetables, Szechuan sauce, Garlic, Vinegar, Spring onion",
     servingSize: "Main course (serves 1)",
     calories: 600,
     prepTime: "10-15 mins",
@@ -1240,8 +1376,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/chinese/chinese7.jpg",
     restaurant: "Sea Noodle Bar",
-    description: "Hakka noodles tossed with juicy prawns and a savory light soy sauce blend.",
-    ingredients: "Noodles, Prawns, Cabbage, Carrots, Capsicum, Soy sauce, Sesame oil",
+    description:
+      "Hakka noodles tossed with juicy prawns and a savory light soy sauce blend.",
+    ingredients:
+      "Noodles, Prawns, Cabbage, Carrots, Capsicum, Soy sauce, Sesame oil",
     servingSize: "Main course (serves 1)",
     calories: 680,
     prepTime: "12-18 mins",
@@ -1256,8 +1394,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/chinese/chinese8.jpg",
     restaurant: "Veggie Indo-Chinese",
-    description: "Crispy fried paneer cubes tossed in a spicy-tangy sauce with bell peppers and onions. Vegetarian chili favorite.",
-    ingredients: "Paneer cubes, Corn flour, Soy sauce, Vinegar, Green chili, Capsicum, Onion, Ginger",
+    description:
+      "Crispy fried paneer cubes tossed in a spicy-tangy sauce with bell peppers and onions. Vegetarian chili favorite.",
+    ingredients:
+      "Paneer cubes, Corn flour, Soy sauce, Vinegar, Green chili, Capsicum, Onion, Ginger",
     servingSize: "Appetizer (serves 1-2)",
     calories: 650,
     prepTime: "15-20 mins",
@@ -1272,8 +1412,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/chinese/chinese9.jpg",
     restaurant: "Beijing Bistro",
-    description: "Diced chicken, peanuts, vegetables, and chili peppers stir-fried with a sweet and savory sauce. Classic dish.",
-    ingredients: "Diced chicken, Peanuts, Dried chilies, Soy sauce, Vinegar, Sugar, Bell peppers, Spring onion",
+    description:
+      "Diced chicken, peanuts, vegetables, and chili peppers stir-fried with a sweet and savory sauce. Classic dish.",
+    ingredients:
+      "Diced chicken, Peanuts, Dried chilies, Soy sauce, Vinegar, Sugar, Bell peppers, Spring onion",
     servingSize: "Main course (serves 1-2)",
     calories: 750,
     prepTime: "15-20 mins",
@@ -1288,8 +1430,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/chinese/chinese10.jpg",
     restaurant: "Momo Mania",
-    description: "Soft steamed dumplings filled with finely chopped vegetables and served with a spicy red dipping sauce.",
-    ingredients: "Flour dough, Chopped cabbage, Carrot, Onion, Ginger, Coriander, Spices, Red chili sauce",
+    description:
+      "Soft steamed dumplings filled with finely chopped vegetables and served with a spicy red dipping sauce.",
+    ingredients:
+      "Flour dough, Chopped cabbage, Carrot, Onion, Ginger, Coriander, Spices, Red chili sauce",
     servingSize: "8 pieces",
     calories: 450,
     prepTime: "15-20 mins",
@@ -1304,8 +1448,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/chinese/chinese11.jpg",
     restaurant: "Gravy Central",
-    description: "Fried chicken balls served in a thick, savory brown gravy. A popular Indo-Chinese main course.",
-    ingredients: "Chicken balls, Soy sauce, Ginger, Garlic, Spring onion, Cornflour, Water",
+    description:
+      "Fried chicken balls served in a thick, savory brown gravy. A popular Indo-Chinese main course.",
+    ingredients:
+      "Chicken balls, Soy sauce, Ginger, Garlic, Spring onion, Cornflour, Water",
     servingSize: "Side dish (serves 1-2)",
     calories: 700,
     prepTime: "18-22 mins",
@@ -1320,8 +1466,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/chinese/chinese12.jpg",
     restaurant: "Crispy Corners",
-    description: "Crispy fried rolls filled with a shredded vegetable mixture. Served with sweet chili sauce.",
-    ingredients: "Spring roll wrappers, Cabbage, Carrot, Onion, Noodles, Soy sauce",
+    description:
+      "Crispy fried rolls filled with a shredded vegetable mixture. Served with sweet chili sauce.",
+    ingredients:
+      "Spring roll wrappers, Cabbage, Carrot, Onion, Noodles, Soy sauce",
     servingSize: "2 pieces",
     calories: 300,
     prepTime: "10-15 mins",
@@ -1336,8 +1484,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/chinese/chinese13.jpg",
     restaurant: "The Spicy Grill",
-    description: "Tender shredded lamb stir-fried in a fiery hot garlic sauce with bamboo shoots.",
-    ingredients: "Lamb strips, Garlic, Red chili, Soy sauce, Vinegar, Bamboo shoots",
+    description:
+      "Tender shredded lamb stir-fried in a fiery hot garlic sauce with bamboo shoots.",
+    ingredients:
+      "Lamb strips, Garlic, Red chili, Soy sauce, Vinegar, Bamboo shoots",
     servingSize: "Main course (serves 1-2)",
     calories: 780,
     prepTime: "20-25 mins",
@@ -1352,8 +1502,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/chinese/chinese14.jpg",
     restaurant: "Korean Street Food",
-    description: "Rice stir-fried with fermented cabbage (kimchi), pork (optional), and a fried egg on top. Korean-Chinese fusion.",
-    ingredients: "Rice, Kimchi, Pork (or Tofu), Gochujang, Sesame oil, Fried egg, Onion",
+    description:
+      "Rice stir-fried with fermented cabbage (kimchi), pork (optional), and a fried egg on top. Korean-Chinese fusion.",
+    ingredients:
+      "Rice, Kimchi, Pork (or Tofu), Gochujang, Sesame oil, Fried egg, Onion",
     servingSize: "Main course (serves 1)",
     calories: 700,
     prepTime: "15-20 mins",
@@ -1368,8 +1520,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/chinese/chinese15.jpg",
     restaurant: "Noodle Fusion",
-    description: "Crispy fried noodles topped with a sweet, savory vegetable gravy.",
-    ingredients: "Fried noodles, Mixed vegetables, Sweet-sour gravy, Soy sauce, Tomato ketchup",
+    description:
+      "Crispy fried noodles topped with a sweet, savory vegetable gravy.",
+    ingredients:
+      "Fried noodles, Mixed vegetables, Sweet-sour gravy, Soy sauce, Tomato ketchup",
     servingSize: "Main course (serves 1)",
     calories: 630,
     prepTime: "15-20 mins",
@@ -1384,8 +1538,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/chinese/chinese16.jpg",
     restaurant: "Snack Wok",
-    description: "Finger-cut potatoes, fried crispy and tossed in a sweet, sticky, and spicy honey chili glaze.",
-    ingredients: "Potatoes, Honey, Chili flakes, Sesame seeds, Vinegar, Soy sauce",
+    description:
+      "Finger-cut potatoes, fried crispy and tossed in a sweet, sticky, and spicy honey chili glaze.",
+    ingredients:
+      "Potatoes, Honey, Chili flakes, Sesame seeds, Vinegar, Soy sauce",
     servingSize: "Appetizer (serves 1-2)",
     calories: 580,
     prepTime: "15-20 mins",
@@ -1400,8 +1556,10 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/chinese/chinese17.jpg",
     restaurant: "Emperor's Table",
-    description: "Classic dish of crispy-skinned duck, served with thin pancakes, scallions, and hoisin sauce.",
-    ingredients: "Duck, Hoisin sauce, Scallions, Cucumber, Pancakes (Mandarin crepes)",
+    description:
+      "Classic dish of crispy-skinned duck, served with thin pancakes, scallions, and hoisin sauce.",
+    ingredients:
+      "Duck, Hoisin sauce, Scallions, Cucumber, Pancakes (Mandarin crepes)",
     servingSize: "Feast (serves 2-3)",
     calories: 1800,
     prepTime: "40-60 mins (ready to serve)",
@@ -1416,8 +1574,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/chinese/chinese18.jpg",
     restaurant: "Vegan Wok",
-    description: "Soft tofu cubes and mixed vegetables tossed in a pungent, salty black bean sauce.",
-    ingredients: "Tofu, Fermented black beans, Garlic, Ginger, Bell peppers, Water chestnuts, Soy sauce",
+    description:
+      "Soft tofu cubes and mixed vegetables tossed in a pungent, salty black bean sauce.",
+    ingredients:
+      "Tofu, Fermented black beans, Garlic, Ginger, Bell peppers, Water chestnuts, Soy sauce",
     servingSize: "Main course (serves 1-2)",
     calories: 500,
     prepTime: "15-20 mins",
@@ -1432,7 +1592,8 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/chinese/chinese19.jpg",
     restaurant: "Stir Fry Central",
-    description: "Noodles tossed with shredded vegetables and scrambled egg. A protein-rich option.",
+    description:
+      "Noodles tossed with shredded vegetables and scrambled egg. A protein-rich option.",
     ingredients: "Noodles, Egg, Cabbage, Carrot, Onion, Soy sauce, Vinegar",
     servingSize: "Main course (serves 1)",
     calories: 620,
@@ -1448,8 +1609,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/chinese/chinese20.jpg",
     restaurant: "Dumpling Delight",
-    description: "Crispy pan-fried dumplings filled with vegetables, served with ginger-soy dipping sauce.",
-    ingredients: "Flour dough, Mixed vegetables, Ginger, Garlic, Soy sauce, Sesame oil",
+    description:
+      "Crispy pan-fried dumplings filled with vegetables, served with ginger-soy dipping sauce.",
+    ingredients:
+      "Flour dough, Mixed vegetables, Ginger, Garlic, Soy sauce, Sesame oil",
     servingSize: "6 pieces",
     calories: 550,
     prepTime: "15-20 mins",
@@ -1464,8 +1627,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/chinese/chinese21.jpg",
     restaurant: "Shanghai Kitchen",
-    description: "Fried chicken pieces, pineapple, and bell peppers in a classic vibrant sweet and sour sauce.",
-    ingredients: "Chicken pieces, Pineapple, Bell peppers, Sweet & Sour sauce (Vinegar, Sugar, Ketchup)",
+    description:
+      "Fried chicken pieces, pineapple, and bell peppers in a classic vibrant sweet and sour sauce.",
+    ingredients:
+      "Chicken pieces, Pineapple, Bell peppers, Sweet & Sour sauce (Vinegar, Sugar, Ketchup)",
     servingSize: "Main course (serves 1-2)",
     calories: 750,
     prepTime: "18-22 mins",
@@ -1480,8 +1645,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/chinese/chinese22.jpg",
     restaurant: "Chili Noodle Wok",
-    description: "Wok-tossed noodles with chicken and a fiery Schezwan sauce. A spicy delight.",
-    ingredients: "Noodles, Chicken, Schezwan sauce, Capsicum, Onion, Spring onion",
+    description:
+      "Wok-tossed noodles with chicken and a fiery Schezwan sauce. A spicy delight.",
+    ingredients:
+      "Noodles, Chicken, Schezwan sauce, Capsicum, Onion, Spring onion",
     servingSize: "Main course (serves 1)",
     calories: 680,
     prepTime: "12-18 mins",
@@ -1496,8 +1663,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/chinese/chinese23.jpg",
     restaurant: "Soup Spot",
-    description: "A thick, spicy, and sour broth with finely chopped vegetables and mushrooms.",
-    ingredients: "Vegetable stock, Mushrooms, Tofu, Carrot, Vinegar, Soy sauce, Chili sauce",
+    description:
+      "A thick, spicy, and sour broth with finely chopped vegetables and mushrooms.",
+    ingredients:
+      "Vegetable stock, Mushrooms, Tofu, Carrot, Vinegar, Soy sauce, Chili sauce",
     servingSize: "Single bowl",
     calories: 150,
     prepTime: "10-15 mins",
@@ -1512,8 +1681,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/chinese/chinese24.jpg",
     restaurant: "Crispy Meat House",
-    description: "Thin strips of beef, fried until crispy and tossed in a sweet, tangy, sesame sauce.",
-    ingredients: "Beef strips, Soy sauce, Vinegar, Sugar, Sesame seeds, Ginger, Garlic",
+    description:
+      "Thin strips of beef, fried until crispy and tossed in a sweet, tangy, sesame sauce.",
+    ingredients:
+      "Beef strips, Soy sauce, Vinegar, Sugar, Sesame seeds, Ginger, Garlic",
     servingSize: "Appetizer (serves 1-2)",
     calories: 820,
     prepTime: "20-25 mins",
@@ -1528,8 +1699,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/chinese/chinese25.jpg",
     restaurant: "Bao & Steam",
-    description: "A selection of assorted steamed vegetarian dim sum, including crystal dumplings and shui mai.",
-    ingredients: "Flour, Mixed vegetables, Water chestnuts, Bamboo shoots, Soy sauce",
+    description:
+      "A selection of assorted steamed vegetarian dim sum, including crystal dumplings and shui mai.",
+    ingredients:
+      "Flour, Mixed vegetables, Water chestnuts, Bamboo shoots, Soy sauce",
     servingSize: "6 pieces",
     calories: 480,
     prepTime: "15-20 mins",
@@ -1544,8 +1717,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/chinese/chinese26.jpg",
     restaurant: "Fusion Wok",
-    description: "Curry-flavored rice stir-fried with chicken, shrimp, vegetables, and a hint of sweetness.",
-    ingredients: "Rice, Chicken, Shrimp, Vegetables, Curry powder, Egg, Soy sauce",
+    description:
+      "Curry-flavored rice stir-fried with chicken, shrimp, vegetables, and a hint of sweetness.",
+    ingredients:
+      "Rice, Chicken, Shrimp, Vegetables, Curry powder, Egg, Soy sauce",
     servingSize: "Main course (serves 1)",
     calories: 710,
     prepTime: "15-20 mins",
@@ -1560,8 +1735,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/chinese/chinese27.jpg",
     restaurant: "Green Valley Wok",
-    description: "Fresh mushrooms and crispy bamboo shoots stir-fried in a delicate soy and oyster sauce (vegan option available).",
-    ingredients: "Mushrooms, Bamboo shoots, Soy sauce, Oyster sauce, Garlic, Ginger, Spring onion",
+    description:
+      "Fresh mushrooms and crispy bamboo shoots stir-fried in a delicate soy and oyster sauce (vegan option available).",
+    ingredients:
+      "Mushrooms, Bamboo shoots, Soy sauce, Oyster sauce, Garlic, Ginger, Spring onion",
     servingSize: "Side dish (serves 1-2)",
     calories: 450,
     prepTime: "15-20 mins",
@@ -1576,8 +1753,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/chinese/chinese28.jpg",
     restaurant: "Citrus Kitchen",
-    description: "Crispy fried chicken pieces served with a bright, tangy, and sweet lemon sauce.",
-    ingredients: "Fried chicken, Lemon juice, Sugar, Water, Cornflour, Lemon zest",
+    description:
+      "Crispy fried chicken pieces served with a bright, tangy, and sweet lemon sauce.",
+    ingredients:
+      "Fried chicken, Lemon juice, Sugar, Water, Cornflour, Lemon zest",
     servingSize: "Main course (serves 1-2)",
     calories: 730,
     prepTime: "18-22 mins",
@@ -1592,8 +1771,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/chinese/chinese29.jpg",
     restaurant: "Garlic Goodness",
-    description: "Noodles tossed with burnt garlic flakes, soy sauce, and a mix of Asian greens. Intensely aromatic.",
-    ingredients: "Noodles, Burnt garlic flakes, Soy sauce, Bok choy, Sesame oil, Spring onion",
+    description:
+      "Noodles tossed with burnt garlic flakes, soy sauce, and a mix of Asian greens. Intensely aromatic.",
+    ingredients:
+      "Noodles, Burnt garlic flakes, Soy sauce, Bok choy, Sesame oil, Spring onion",
     servingSize: "Main course (serves 1)",
     calories: 580,
     prepTime: "10-15 mins",
@@ -1608,8 +1789,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/chinese/chinese30.jpg",
     restaurant: "Wonton House",
-    description: "Crispy fried wontons filled with a savory vegetable mix, served with a chili-garlic dip.",
-    ingredients: "Wonton wrappers, Cabbage, Carrot, Onion, Garlic, Chili-garlic sauce",
+    description:
+      "Crispy fried wontons filled with a savory vegetable mix, served with a chili-garlic dip.",
+    ingredients:
+      "Wonton wrappers, Cabbage, Carrot, Onion, Garlic, Chili-garlic sauce",
     servingSize: "6 pieces",
     calories: 400,
     prepTime: "10-15 mins",
@@ -1626,8 +1809,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/desserts/dessert1.jpg",
     restaurant: "Sweet Indulgence",
-    description: "Warm chocolate cake with a gooey, molten chocolate center. Served with a scoop of vanilla bean ice cream.",
-    ingredients: "Dark chocolate, Butter, Eggs, Sugar, Flour, Vanilla extract, Vanilla ice cream",
+    description:
+      "Warm chocolate cake with a gooey, molten chocolate center. Served with a scoop of vanilla bean ice cream.",
+    ingredients:
+      "Dark chocolate, Butter, Eggs, Sugar, Flour, Vanilla extract, Vanilla ice cream",
     servingSize: "Single serving",
     calories: 550,
     prepTime: "10-15 mins",
@@ -1642,8 +1827,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/desserts/dessert2.jpg",
     restaurant: "Mithai Mahal",
-    description: "Soft, deep-fried milk solids (khoya) balls soaked in a rose-flavored sugar syrup. A classic Indian dessert.",
-    ingredients: "Khoya (milk solids), Maida, Sugar, Water, Rose water, Cardamom pods",
+    description:
+      "Soft, deep-fried milk solids (khoya) balls soaked in a rose-flavored sugar syrup. A classic Indian dessert.",
+    ingredients:
+      "Khoya (milk solids), Maida, Sugar, Water, Rose water, Cardamom pods",
     servingSize: "Two pieces",
     calories: 400,
     prepTime: "5-10 mins (ready to serve)",
@@ -1658,8 +1845,10 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/desserts/dessert3.jpg",
     restaurant: "The Cake Vault",
-    description: "Rich, dense, and creamy cheesecake with a graham cracker crust. Served plain or with a berry topping.",
-    ingredients: "Cream cheese, Graham crackers, Butter, Sugar, Eggs, Vanilla extract, Sour cream",
+    description:
+      "Rich, dense, and creamy cheesecake with a graham cracker crust. Served plain or with a berry topping.",
+    ingredients:
+      "Cream cheese, Graham crackers, Butter, Sugar, Eggs, Vanilla extract, Sour cream",
     servingSize: "Single slice",
     calories: 650,
     prepTime: "10 mins (ready to serve)",
@@ -1674,8 +1863,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/desserts/dessert4.jpg",
     restaurant: "Italian Sweets",
-    description: "A rich coffee-flavored Italian dessert. Layers of coffee-soaked ladyfingers and a creamy mascarpone mixture, dusted with cocoa.",
-    ingredients: "Ladyfingers, Mascarpone cheese, Eggs, Sugar, Coffee, Cocoa powder, Marsala wine (optional)",
+    description:
+      "A rich coffee-flavored Italian dessert. Layers of coffee-soaked ladyfingers and a creamy mascarpone mixture, dusted with cocoa.",
+    ingredients:
+      "Ladyfingers, Mascarpone cheese, Eggs, Sugar, Coffee, Cocoa powder, Marsala wine (optional)",
     servingSize: "Single cup",
     calories: 520,
     prepTime: "10 mins (ready to serve)",
@@ -1690,8 +1881,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/desserts/dessert5.jpg",
     restaurant: "Fudge Factory",
-    description: "Warm, gooey chocolate fudge brownie topped with a scoop of vanilla ice cream and chocolate syrup.",
-    ingredients: "Flour, Cocoa powder, Butter, Sugar, Eggs, Vanilla ice cream, Chocolate syrup",
+    description:
+      "Warm, gooey chocolate fudge brownie topped with a scoop of vanilla ice cream and chocolate syrup.",
+    ingredients:
+      "Flour, Cocoa powder, Butter, Sugar, Eggs, Vanilla ice cream, Chocolate syrup",
     servingSize: "Single serving",
     calories: 600,
     prepTime: "10-15 mins",
@@ -1706,7 +1899,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/desserts/dessert6.jpg",
     restaurant: "Bengal Delights",
-    description: "Soft and spongy cottage cheese dumplings soaked in light sugar syrup.",
+    description:
+      "Soft and spongy cottage cheese dumplings soaked in light sugar syrup.",
     ingredients: "Chhena (cottage cheese), Sugar, Water, Cardamom",
     servingSize: "Three pieces",
     calories: 350,
@@ -1722,7 +1916,8 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/desserts/dessert7.jpg",
     restaurant: "Waffle Wonderland",
-    description: "A crispy Belgian waffle dusted with powdered sugar and generously drizzled with pure maple syrup.",
+    description:
+      "A crispy Belgian waffle dusted with powdered sugar and generously drizzled with pure maple syrup.",
     ingredients: "Waffle mix, Milk, Butter, Maple syrup, Powdered sugar",
     servingSize: "Single waffle",
     calories: 480,
@@ -1738,7 +1933,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/desserts/dessert8.jpg",
     restaurant: "Cookie Jar",
-    description: "Freshly baked, soft, and chewy cookies loaded with semi-sweet chocolate chips.",
+    description:
+      "Freshly baked, soft, and chewy cookies loaded with semi-sweet chocolate chips.",
     ingredients: "Flour, Butter, Sugar, Eggs, Chocolate chips, Vanilla extract",
     servingSize: "Three cookies",
     calories: 450,
@@ -1754,8 +1950,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/desserts/dessert9.jpg",
     restaurant: "Healthy Dessert Spot",
-    description: "A bowl of chilled, creamy vanilla custard mixed with fresh seasonal fruits like banana, apple, and grapes.",
-    ingredients: "Milk, Custard powder, Sugar, Banana, Apple, Grapes, Pomegranate",
+    description:
+      "A bowl of chilled, creamy vanilla custard mixed with fresh seasonal fruits like banana, apple, and grapes.",
+    ingredients:
+      "Milk, Custard powder, Sugar, Banana, Apple, Grapes, Pomegranate",
     servingSize: "Medium bowl",
     calories: 380,
     prepTime: "5-10 mins (ready to serve)",
@@ -1770,8 +1968,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/desserts/dessert10.jpg",
     restaurant: "Ice Cream Palace",
-    description: "Three scoops of vanilla ice cream topped with rich, warm hot fudge, whipped cream, and a cherry.",
-    ingredients: "Vanilla ice cream, Hot fudge sauce, Whipped cream, Cherry, Nuts",
+    description:
+      "Three scoops of vanilla ice cream topped with rich, warm hot fudge, whipped cream, and a cherry.",
+    ingredients:
+      "Vanilla ice cream, Hot fudge sauce, Whipped cream, Cherry, Nuts",
     servingSize: "Single sundae",
     calories: 700,
     prepTime: "5 mins",
@@ -1786,8 +1986,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/desserts/dessert11.jpg",
     restaurant: "Desi Ice Cream",
-    description: "Traditional Indian frozen dessert (kulfi) served with rose syrup, vermicelli noodles (falooda), and basil seeds.",
-    ingredients: "Kulfi, Falooda sev, Rose syrup, Sabja seeds (basil seeds), Milk, Nuts",
+    description:
+      "Traditional Indian frozen dessert (kulfi) served with rose syrup, vermicelli noodles (falooda), and basil seeds.",
+    ingredients:
+      "Kulfi, Falooda sev, Rose syrup, Sabja seeds (basil seeds), Milk, Nuts",
     servingSize: "Tall glass",
     calories: 580,
     prepTime: "5-10 mins (ready to serve)",
@@ -1802,8 +2004,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/desserts/dessert12.jpg",
     restaurant: "Pie Heaven",
-    description: "A tart and sweet lemon custard filling topped with a fluffy, toasted meringue.",
-    ingredients: "Pie crust, Lemon juice, Egg yolks, Sugar, Egg whites (for meringue)",
+    description:
+      "A tart and sweet lemon custard filling topped with a fluffy, toasted meringue.",
+    ingredients:
+      "Pie crust, Lemon juice, Egg yolks, Sugar, Egg whites (for meringue)",
     servingSize: "Single slice",
     calories: 500,
     prepTime: "10 mins (ready to serve)",
@@ -1818,8 +2022,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/desserts/dessert13.jpg",
     restaurant: "Maa's Kitchen",
-    description: "Classic Indian dessert made from grated carrots, milk, sugar, and generous amounts of ghee and nuts. Served warm.",
-    ingredients: "Carrots, Milk, Sugar, Ghee, Cashews, Almonds, Cardamom powder",
+    description:
+      "Classic Indian dessert made from grated carrots, milk, sugar, and generous amounts of ghee and nuts. Served warm.",
+    ingredients:
+      "Carrots, Milk, Sugar, Ghee, Cashews, Almonds, Cardamom powder",
     servingSize: "Small bowl",
     calories: 420,
     prepTime: "10-15 mins",
@@ -1834,8 +2040,10 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/desserts/dessert14.jpg",
     restaurant: "The Cake Vault",
-    description: "A dramatic red layered cake with a hint of cocoa, topped with rich cream cheese frosting.",
-    ingredients: "Flour, Cocoa powder, Buttermilk, Vinegar, Red food coloring, Cream cheese, Butter, Sugar, Eggs",
+    description:
+      "A dramatic red layered cake with a hint of cocoa, topped with rich cream cheese frosting.",
+    ingredients:
+      "Flour, Cocoa powder, Buttermilk, Vinegar, Red food coloring, Cream cheese, Butter, Sugar, Eggs",
     servingSize: "Single slice",
     calories: 700,
     prepTime: "10 mins (ready to serve)",
@@ -1850,8 +2058,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/desserts/dessert15.jpg",
     restaurant: "Thai Treats",
-    description: "Sweet sticky rice cooked in coconut milk, served with slices of fresh, ripe mango.",
-    ingredients: "Glutinous rice, Coconut milk, Sugar, Salt, Fresh mango slices",
+    description:
+      "Sweet sticky rice cooked in coconut milk, served with slices of fresh, ripe mango.",
+    ingredients:
+      "Glutinous rice, Coconut milk, Sugar, Salt, Fresh mango slices",
     servingSize: "Single serving",
     calories: 550,
     prepTime: "5-10 mins (ready to serve)",
@@ -1866,8 +2076,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/desserts/dessert16.jpg",
     restaurant: "Pastry Parade",
-    description: "Layers of chocolate sponge cake, whipped cream, and cherries, topped with chocolate shavings.",
-    ingredients: "Chocolate sponge, Whipped cream, Cherries, Kirsch (cherry liquor, optional), Chocolate shavings",
+    description:
+      "Layers of chocolate sponge cake, whipped cream, and cherries, topped with chocolate shavings.",
+    ingredients:
+      "Chocolate sponge, Whipped cream, Cherries, Kirsch (cherry liquor, optional), Chocolate shavings",
     servingSize: "Single pastry",
     calories: 450,
     prepTime: "5-10 mins (ready to serve)",
@@ -1882,8 +2094,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/desserts/dessert17.jpg",
     restaurant: "American Pies",
-    description: "Warm slice of classic apple pie with a scoop of vanilla ice cream on top.",
-    ingredients: "Pie crust, Apples, Cinnamon, Nutmeg, Sugar, Vanilla ice cream",
+    description:
+      "Warm slice of classic apple pie with a scoop of vanilla ice cream on top.",
+    ingredients:
+      "Pie crust, Apples, Cinnamon, Nutmeg, Sugar, Vanilla ice cream",
     servingSize: "Single serving",
     calories: 620,
     prepTime: "15-20 mins",
@@ -1898,8 +2112,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/desserts/dessert18.jpg",
     restaurant: "Mithai Mahal",
-    description: "Soft cheese patties immersed in chilled, sweetened, saffron-flavored milk (ras).",
-    ingredients: "Chhena (cottage cheese), Milk, Sugar, Saffron, Cardamom, Pistachios",
+    description:
+      "Soft cheese patties immersed in chilled, sweetened, saffron-flavored milk (ras).",
+    ingredients:
+      "Chhena (cottage cheese), Milk, Sugar, Saffron, Cardamom, Pistachios",
     servingSize: "Two pieces",
     calories: 420,
     prepTime: "5-10 mins (ready to serve)",
@@ -1914,7 +2130,8 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/desserts/dessert19.jpg",
     restaurant: "Donut Stop",
-    description: "Two classic, fluffy yeast donuts covered in a sweet sugar glaze.",
+    description:
+      "Two classic, fluffy yeast donuts covered in a sweet sugar glaze.",
     ingredients: "Yeast dough, Sugar, Milk, Vanilla extract, Oil for frying",
     servingSize: "Two donuts",
     calories: 400,
@@ -1930,7 +2147,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/desserts/dessert20.jpg",
     restaurant: "Crepe Corner",
-    description: "Thin French pancake folded and filled with rich, creamy Nutella chocolate-hazelnut spread.",
+    description:
+      "Thin French pancake folded and filled with rich, creamy Nutella chocolate-hazelnut spread.",
     ingredients: "Crepe batter (Flour, Milk, Egg), Nutella, Powdered sugar",
     servingSize: "Single crepe",
     calories: 580,
@@ -1946,7 +2164,8 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/desserts/dessert21.jpg",
     restaurant: "Italian Sweets",
-    description: "Creamy, smooth Italian cooked cream dessert, served chilled with a tart raspberry sauce.",
+    description:
+      "Creamy, smooth Italian cooked cream dessert, served chilled with a tart raspberry sauce.",
     ingredients: "Cream, Sugar, Gelatin, Vanilla, Raspberries, Lemon juice",
     servingSize: "Single cup",
     calories: 450,
@@ -1962,8 +2181,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/desserts/dessert22.jpg",
     restaurant: "Pure Goodness",
-    description: "A rich, dairy-free chocolate mousse made with creamy avocado, cocoa, and maple syrup.",
-    ingredients: "Avocado, Cocoa powder, Maple syrup, Vanilla extract, Almond milk",
+    description:
+      "A rich, dairy-free chocolate mousse made with creamy avocado, cocoa, and maple syrup.",
+    ingredients:
+      "Avocado, Cocoa powder, Maple syrup, Vanilla extract, Almond milk",
     servingSize: "Small bowl",
     calories: 320,
     prepTime: "5-10 mins (ready to serve)",
@@ -1978,8 +2199,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/desserts/dessert23.jpg",
     restaurant: "Sweet and Crispy",
-    description: "Crispy, deep-fried coils of batter soaked in sugar syrup (Jalebi), served with a thickened, sweetened milk (Rabri).",
-    ingredients: "Maida (flour), Yogurt, Sugar syrup, Saffron, Milk (for Rabri), Cardamom",
+    description:
+      "Crispy, deep-fried coils of batter soaked in sugar syrup (Jalebi), served with a thickened, sweetened milk (Rabri).",
+    ingredients:
+      "Maida (flour), Yogurt, Sugar syrup, Saffron, Milk (for Rabri), Cardamom",
     servingSize: "2 Jalebis with Rabri",
     calories: 550,
     prepTime: "10-15 mins",
@@ -1994,8 +2217,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/desserts/dessert24.jpg",
     restaurant: "Ice Cream Palace",
-    description: "A banana split lengthwise and topped with scoops of vanilla, chocolate, and strawberry ice cream, drizzled with sauces and nuts.",
-    ingredients: "Banana, Vanilla, Chocolate, Strawberry ice cream, Chocolate sauce, Caramel, Nuts, Cherry",
+    description:
+      "A banana split lengthwise and topped with scoops of vanilla, chocolate, and strawberry ice cream, drizzled with sauces and nuts.",
+    ingredients:
+      "Banana, Vanilla, Chocolate, Strawberry ice cream, Chocolate sauce, Caramel, Nuts, Cherry",
     servingSize: "One serving",
     calories: 850,
     prepTime: "5 mins",
@@ -2010,7 +2235,8 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/desserts/dessert25.jpg",
     restaurant: "Spanish Sweets",
-    description: "Fried dough pastries dusted with cinnamon sugar, served with a thick, warm chocolate dipping sauce.",
+    description:
+      "Fried dough pastries dusted with cinnamon sugar, served with a thick, warm chocolate dipping sauce.",
     ingredients: "Churro dough, Cinnamon sugar, Chocolate dipping sauce",
     servingSize: "Four pieces",
     calories: 520,
@@ -2028,8 +2254,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/beverages/beverage1.jpg",
     restaurant: "Cafe Brew",
-    description: "Chilled, creamy coffee blended with milk, sugar, and ice. Topped with a dollop of vanilla ice cream for extra indulgence.",
-    ingredients: "Espresso shot, Milk, Sugar, Ice, Vanilla ice cream (optional)",
+    description:
+      "Chilled, creamy coffee blended with milk, sugar, and ice. Topped with a dollop of vanilla ice cream for extra indulgence.",
+    ingredients:
+      "Espresso shot, Milk, Sugar, Ice, Vanilla ice cream (optional)",
     servingSize: "300ml glass",
     calories: 300,
     prepTime: "5 mins",
@@ -2044,7 +2272,8 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/beverages/beverage2.jpg",
     restaurant: "Juice Bar",
-    description: "100% freshly squeezed watermelon juice. Hydrating, refreshing, and naturally sweet. No added sugar.",
+    description:
+      "100% freshly squeezed watermelon juice. Hydrating, refreshing, and naturally sweet. No added sugar.",
     ingredients: "Fresh Watermelon, A squeeze of Lime, Mint leaves (optional)",
     servingSize: "300ml glass",
     calories: 90,
@@ -2060,7 +2289,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/beverages/beverage3.jpg",
     restaurant: "Mocktail Mixers",
-    description: "A refreshing blend of fresh mint leaves, lime juice, simple syrup, and soda water, served over crushed ice.",
+    description:
+      "A refreshing blend of fresh mint leaves, lime juice, simple syrup, and soda water, served over crushed ice.",
     ingredients: "Mint leaves, Lime juice, Sugar syrup, Soda water, Ice",
     servingSize: "300ml glass",
     calories: 120,
@@ -2076,7 +2306,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/beverages/beverage4.jpg",
     restaurant: "Quench Station",
-    description: "Simple, tangy, and sweet homemade lemonade. A perfect thirst quencher.",
+    description:
+      "Simple, tangy, and sweet homemade lemonade. A perfect thirst quencher.",
     ingredients: "Fresh lemon juice, Water, Sugar, Ice",
     servingSize: "300ml glass",
     calories: 110,
@@ -2092,7 +2323,8 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/beverages/beverage5.jpg",
     restaurant: "Desi Drinks",
-    description: "A thick, creamy blend of yogurt, mango pulp, and a touch of sugar. Chilled and rich.",
+    description:
+      "A thick, creamy blend of yogurt, mango pulp, and a touch of sugar. Chilled and rich.",
     ingredients: "Yogurt (Curd), Mango pulp, Sugar, Cardamom powder, Ice",
     servingSize: "300ml glass",
     calories: 380,
@@ -2108,7 +2340,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/beverages/beverage6.jpg",
     restaurant: "Cafe Brew",
-    description: "Equal parts espresso, steamed milk, and foamed milk, dusted with cocoa powder.",
+    description:
+      "Equal parts espresso, steamed milk, and foamed milk, dusted with cocoa powder.",
     ingredients: "Espresso shot, Steamed milk, Foamed milk, Cocoa powder",
     servingSize: "200ml cup",
     calories: 120,
@@ -2140,7 +2373,8 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/beverages/beverage8.jpg",
     restaurant: "Shake Factory",
-    description: "Thick, creamy shake blended with fresh strawberries and vanilla ice cream.",
+    description:
+      "Thick, creamy shake blended with fresh strawberries and vanilla ice cream.",
     ingredients: "Milk, Strawberry ice cream, Fresh strawberries, Sugar",
     servingSize: "350ml glass",
     calories: 450,
@@ -2156,8 +2390,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/beverages/beverage9.jpg",
     restaurant: "Chaiwala",
-    description: "Strong, sweet Indian tea brewed with milk and aromatic spices like ginger, cardamom, and clove.",
-    ingredients: "Black tea leaves, Milk, Water, Sugar, Ginger, Cardamom, Cloves, Cinnamon",
+    description:
+      "Strong, sweet Indian tea brewed with milk and aromatic spices like ginger, cardamom, and clove.",
+    ingredients:
+      "Black tea leaves, Milk, Water, Sugar, Ginger, Cardamom, Cloves, Cinnamon",
     servingSize: "200ml cup",
     calories: 150,
     prepTime: "5 mins",
@@ -2172,7 +2408,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/beverages/beverage10.jpg",
     restaurant: "Mocktail Mixers",
-    description: "Freshly squeezed orange juice mixed with basil leaves, lime, and a hint of sparkling water. Zesty and herbal.",
+    description:
+      "Freshly squeezed orange juice mixed with basil leaves, lime, and a hint of sparkling water. Zesty and herbal.",
     ingredients: "Orange juice, Fresh basil, Lime juice, Sparkling water, Ice",
     servingSize: "300ml glass",
     calories: 130,
@@ -2188,8 +2425,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/beverages/beverage11.jpg",
     restaurant: "Cocoa Cloud",
-    description: "Rich, velvety smooth dark hot chocolate topped with marshmallows or whipped cream.",
-    ingredients: "Dark chocolate, Milk, Sugar, Cocoa powder, Marshmallows/Whipped cream",
+    description:
+      "Rich, velvety smooth dark hot chocolate topped with marshmallows or whipped cream.",
+    ingredients:
+      "Dark chocolate, Milk, Sugar, Cocoa powder, Marshmallows/Whipped cream",
     servingSize: "250ml mug",
     calories: 350,
     prepTime: "8 mins",
@@ -2204,7 +2443,8 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/beverages/beverage12.jpg",
     restaurant: "Cafe Brew",
-    description: "Vanilla syrup, milk, espresso, and a rich caramel sauce drizzle, served over ice.",
+    description:
+      "Vanilla syrup, milk, espresso, and a rich caramel sauce drizzle, served over ice.",
     ingredients: "Espresso, Milk, Vanilla syrup, Caramel sauce, Ice",
     servingSize: "350ml glass",
     calories: 280,
@@ -2220,7 +2460,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/beverages/beverage13.jpg",
     restaurant: "Juice Bar",
-    description: "Tangy and refreshing juice blend made from fresh kiwis and a hint of mint.",
+    description:
+      "Tangy and refreshing juice blend made from fresh kiwis and a hint of mint.",
     ingredients: "Fresh Kiwi, Water, Sugar, Mint leaves, Ice",
     servingSize: "300ml glass",
     calories: 150,
@@ -2236,7 +2477,8 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/beverages/beverage14.jpg",
     restaurant: "Shake Factory",
-    description: "The ultimate indulgence: vanilla ice cream blended with crushed Oreo cookies.",
+    description:
+      "The ultimate indulgence: vanilla ice cream blended with crushed Oreo cookies.",
     ingredients: "Milk, Vanilla ice cream, Oreo cookies, Chocolate syrup",
     servingSize: "350ml glass",
     calories: 600,
@@ -2252,8 +2494,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/beverages/beverage15.jpg",
     restaurant: "Desi Drinks",
-    description: "A savory, thin yogurt drink seasoned with roasted cumin, black salt, and coriander. Digestive and refreshing.",
-    ingredients: "Yogurt (Curd), Water, Cumin powder, Black salt, Coriander, Ginger",
+    description:
+      "A savory, thin yogurt drink seasoned with roasted cumin, black salt, and coriander. Digestive and refreshing.",
+    ingredients:
+      "Yogurt (Curd), Water, Cumin powder, Black salt, Coriander, Ginger",
     servingSize: "300ml glass",
     calories: 80,
     prepTime: "5 mins",
@@ -2269,7 +2513,8 @@ const foodDatabase = [
     image: "https://foodish-api.com/images/beverages/beverage16.jpg",
     restaurant: "Quick Serve",
     description: "A chilled can of Diet Coke, low-calorie soft drink.",
-    ingredients: "Carbonated water, Caramel color, Aspartame, Natural flavors, Phosphoric acid",
+    ingredients:
+      "Carbonated water, Caramel color, Aspartame, Natural flavors, Phosphoric acid",
     servingSize: "300ml can",
     calories: 0,
     prepTime: "1 min",
@@ -2284,7 +2529,8 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/beverages/beverage17.jpg",
     restaurant: "Cafe Brew",
-    description: "A shot of hot espresso poured over a scoop of cold vanilla ice cream. A simple Italian treat.",
+    description:
+      "A shot of hot espresso poured over a scoop of cold vanilla ice cream. A simple Italian treat.",
     ingredients: "Vanilla ice cream, Espresso shot",
     servingSize: "Single serving",
     calories: 250,
@@ -2300,7 +2546,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/beverages/beverage18.jpg",
     restaurant: "Juice Bar",
-    description: "A tropical blend of pineapple juice, orange juice, and a splash of cranberry. Sweet and tangy.",
+    description:
+      "A tropical blend of pineapple juice, orange juice, and a splash of cranberry. Sweet and tangy.",
     ingredients: "Pineapple juice, Orange juice, Cranberry juice, Ice",
     servingSize: "300ml glass",
     calories: 180,
@@ -2316,7 +2563,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/beverages/beverage19.jpg",
     restaurant: "Desi Drinks",
-    description: "A rich, thick shake flavored with traditional Indian pistachio Kulfi and nuts.",
+    description:
+      "A rich, thick shake flavored with traditional Indian pistachio Kulfi and nuts.",
     ingredients: "Milk, Kulfi, Pistachios, Cardamom, Sugar, Ice",
     servingSize: "350ml glass",
     calories: 420,
@@ -2332,7 +2580,8 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/beverages/beverage20.jpg",
     restaurant: "Mocktail Mixers",
-    description: "A light, bubbly mix of cranberry juice and sparkling water with a slice of lime.",
+    description:
+      "A light, bubbly mix of cranberry juice and sparkling water with a slice of lime.",
     ingredients: "Cranberry juice, Sparkling water, Lime slices, Ice",
     servingSize: "300ml glass",
     calories: 100,
@@ -2348,7 +2597,8 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/beverages/beverage21.jpg",
     restaurant: "Healthy Brews",
-    description: "Warm milk infused with anti-inflammatory turmeric, black pepper, and honey. A classic wellness drink.",
+    description:
+      "Warm milk infused with anti-inflammatory turmeric, black pepper, and honey. A classic wellness drink.",
     ingredients: "Milk, Turmeric powder, Black pepper, Honey, Cinnamon",
     servingSize: "200ml cup",
     calories: 180,
@@ -2364,7 +2614,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/beverages/beverage22.jpg",
     restaurant: "Tea Corner",
-    description: "Black tea, chilled and sweetened, with the fruity flavor of fresh peach.",
+    description:
+      "Black tea, chilled and sweetened, with the fruity flavor of fresh peach.",
     ingredients: "Black tea, Peach syrup, Water, Ice, Peach slice",
     servingSize: "350ml glass",
     calories: 160,
@@ -2380,7 +2631,8 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/beverages/beverage23.jpg",
     restaurant: "Smoothie Spot",
-    description: "A protein-packed, thick smoothie blend of banana, peanut butter, and milk.",
+    description:
+      "A protein-packed, thick smoothie blend of banana, peanut butter, and milk.",
     ingredients: "Banana, Peanut butter, Milk, Honey/Maple syrup, Ice",
     servingSize: "400ml glass",
     calories: 400,
@@ -2396,7 +2648,8 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/beverages/beverage24.jpg",
     restaurant: "Juice Bar",
-    description: "Pure, sweet, and slightly tart juice pressed from fresh black grapes.",
+    description:
+      "Pure, sweet, and slightly tart juice pressed from fresh black grapes.",
     ingredients: "Black grapes, Water, Sugar (optional), Ice",
     servingSize: "300ml glass",
     calories: 170,
@@ -2412,8 +2665,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/beverages/beverage25.jpg",
     restaurant: "Quench Station",
-    description: "Soda mixed with traditional Indian spices like cumin, black salt, and dry mango powder. Tangy and fizzy.",
-    ingredients: "Soda water, Cumin powder, Black salt, Dry mango powder, Mint, Lime juice",
+    description:
+      "Soda mixed with traditional Indian spices like cumin, black salt, and dry mango powder. Tangy and fizzy.",
+    ingredients:
+      "Soda water, Cumin powder, Black salt, Dry mango powder, Mint, Lime juice",
     servingSize: "300ml glass",
     calories: 50,
     prepTime: "5 mins",
@@ -2430,8 +2685,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/healthy/healthy1.jpg",
     restaurant: "The Health Spot",
-    description: "Lean grilled chicken breast served on a bed of mixed greens, cherry tomatoes, cucumber, and a light balsamic vinaigrette.",
-    ingredients: "Grilled chicken breast, Mixed greens (Lettuce, Spinach), Cherry tomatoes, Cucumber, Bell peppers, Balsamic vinegar, Olive oil",
+    description:
+      "Lean grilled chicken breast served on a bed of mixed greens, cherry tomatoes, cucumber, and a light balsamic vinaigrette.",
+    ingredients:
+      "Grilled chicken breast, Mixed greens (Lettuce, Spinach), Cherry tomatoes, Cucumber, Bell peppers, Balsamic vinegar, Olive oil",
     servingSize: "Large bowl",
     calories: 450,
     prepTime: "15-20 mins",
@@ -2446,8 +2703,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/healthy/healthy2.jpg",
     restaurant: "Pure Goodness",
-    description: "Nutrient-dense quinoa mixed with black beans, corn, avocado, and lime dressing. A protein-rich, vegan-friendly meal.",
-    ingredients: "Quinoa, Black beans, Sweet corn, Avocado, Red onion, Cilantro, Lime juice, Olive oil",
+    description:
+      "Nutrient-dense quinoa mixed with black beans, corn, avocado, and lime dressing. A protein-rich, vegan-friendly meal.",
+    ingredients:
+      "Quinoa, Black beans, Sweet corn, Avocado, Red onion, Cilantro, Lime juice, Olive oil",
     servingSize: "Medium bowl",
     calories: 400,
     prepTime: "15-20 mins",
@@ -2462,8 +2721,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/healthy/healthy3.jpg",
     restaurant: "Wholesome Bowls",
-    description: "A comforting bowl of slow-cooked red lentils, seasoned with light spices and a dash of lemon. High in fiber and protein.",
-    ingredients: "Red lentils (Masoor Dal), Turmeric, Cumin, Garlic, Ginger, Lemon, Water",
+    description:
+      "A comforting bowl of slow-cooked red lentils, seasoned with light spices and a dash of lemon. High in fiber and protein.",
+    ingredients:
+      "Red lentils (Masoor Dal), Turmeric, Cumin, Garlic, Ginger, Lemon, Water",
     servingSize: "Large bowl",
     calories: 250,
     prepTime: "15-20 mins",
@@ -2478,8 +2739,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/healthy/healthy4.jpg",
     restaurant: "Deli Fresh",
-    description: "Flaky tuna mixed with light mayo, celery, and served on toasted whole wheat bread with lettuce and tomato.",
-    ingredients: "Canned tuna, Whole wheat bread, Light mayonnaise, Celery, Lettuce, Tomato, Seasoning",
+    description:
+      "Flaky tuna mixed with light mayo, celery, and served on toasted whole wheat bread with lettuce and tomato.",
+    ingredients:
+      "Canned tuna, Whole wheat bread, Light mayonnaise, Celery, Lettuce, Tomato, Seasoning",
     servingSize: "Single sandwich",
     calories: 480,
     prepTime: "10-15 mins",
@@ -2494,8 +2757,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/healthy/healthy5.jpg",
     restaurant: "Brunch Bites",
-    description: "Smashed avocado seasoned with chili flakes and lime, topped with crumbled feta cheese on sourdough toast.",
-    ingredients: "Sourdough bread, Avocado, Feta cheese, Lime juice, Chili flakes, Salt, Pepper",
+    description:
+      "Smashed avocado seasoned with chili flakes and lime, topped with crumbled feta cheese on sourdough toast.",
+    ingredients:
+      "Sourdough bread, Avocado, Feta cheese, Lime juice, Chili flakes, Salt, Pepper",
     servingSize: "Single slice",
     calories: 320,
     prepTime: "5-10 mins",
@@ -2510,8 +2775,10 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/healthy/healthy6.jpg",
     restaurant: "Ocean Delights",
-    description: "A lean and healthy main course: Omega-3 rich salmon fillet, baked and served with lightly seasoned roasted asparagus.",
-    ingredients: "Salmon fillet, Asparagus spears, Olive oil, Lemon juice, Salt, Pepper, Garlic powder",
+    description:
+      "A lean and healthy main course: Omega-3 rich salmon fillet, baked and served with lightly seasoned roasted asparagus.",
+    ingredients:
+      "Salmon fillet, Asparagus spears, Olive oil, Lemon juice, Salt, Pepper, Garlic powder",
     servingSize: "Single serving",
     calories: 500,
     prepTime: "20-25 mins",
@@ -2526,8 +2793,10 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/healthy/healthy7.jpg",
     restaurant: "Indian Healthy Wraps",
-    description: "A whole wheat flatbread (roti) filled with sautéed mixed vegetables and a low-fat yogurt dip.",
-    ingredients: "Whole wheat roti, Mixed vegetables (Carrot, Cabbage, Onion), Low-fat yogurt, Mint, Spices",
+    description:
+      "A whole wheat flatbread (roti) filled with sautéed mixed vegetables and a low-fat yogurt dip.",
+    ingredients:
+      "Whole wheat roti, Mixed vegetables (Carrot, Cabbage, Onion), Low-fat yogurt, Mint, Spices",
     servingSize: "Single wrap",
     calories: 380,
     prepTime: "10-15 mins",
@@ -2542,8 +2811,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/healthy/healthy8.jpg",
     restaurant: "Wok & Fit",
-    description: "Stir-fried chicken breast with broccoli, snap peas, and carrots in a light soy-ginger sauce.",
-    ingredients: "Chicken breast, Broccoli, Snap peas, Carrots, Soy sauce, Ginger, Sesame oil",
+    description:
+      "Stir-fried chicken breast with broccoli, snap peas, and carrots in a light soy-ginger sauce.",
+    ingredients:
+      "Chicken breast, Broccoli, Snap peas, Carrots, Soy sauce, Ginger, Sesame oil",
     servingSize: "Large bowl",
     calories: 420,
     prepTime: "15-20 mins",
@@ -2558,8 +2829,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/healthy/healthy9.jpg",
     restaurant: "Pure Goodness",
-    description: "Rolled oats soaked overnight in milk, topped with fresh mixed berries and chia seeds. Perfect breakfast/snack.",
-    ingredients: "Rolled oats, Almond milk, Chia seeds, Mixed berries (Strawberry, Blueberry), Honey",
+    description:
+      "Rolled oats soaked overnight in milk, topped with fresh mixed berries and chia seeds. Perfect breakfast/snack.",
+    ingredients:
+      "Rolled oats, Almond milk, Chia seeds, Mixed berries (Strawberry, Blueberry), Honey",
     servingSize: "Small bowl",
     calories: 300,
     prepTime: "5 mins (ready to serve)",
@@ -2574,8 +2847,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/healthy/healthy10.jpg",
     restaurant: "Deli Fresh",
-    description: "A refreshing dip made with black beans, corn, red onion, and cilantro, served with baked whole grain tortilla chips.",
-    ingredients: "Black beans, Sweet corn, Red onion, Cilantro, Lime juice, Whole grain chips",
+    description:
+      "A refreshing dip made with black beans, corn, red onion, and cilantro, served with baked whole grain tortilla chips.",
+    ingredients:
+      "Black beans, Sweet corn, Red onion, Cilantro, Lime juice, Whole grain chips",
     servingSize: "Serving for one",
     calories: 350,
     prepTime: "10 mins",
@@ -2590,8 +2865,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/healthy/healthy11.jpg",
     restaurant: "Vegan Breakfast Club",
-    description: "A high-protein vegan breakfast/meal made from crumbled tofu, turmeric, black salt, and sautéed spinach.",
-    ingredients: "Tofu, Turmeric, Black salt, Spinach, Onion, Garlic, Nutritional yeast",
+    description:
+      "A high-protein vegan breakfast/meal made from crumbled tofu, turmeric, black salt, and sautéed spinach.",
+    ingredients:
+      "Tofu, Turmeric, Black salt, Spinach, Onion, Garlic, Nutritional yeast",
     servingSize: "Single serving",
     calories: 310,
     prepTime: "15-20 mins",
@@ -2606,8 +2883,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/healthy/healthy12.jpg",
     restaurant: "Low Carb Deli",
-    description: "Lean turkey breast strips seasoned and wrapped in crisp lettuce leaves with a light peanut sauce.",
-    ingredients: "Turkey breast, Lettuce leaves, Peanut sauce (light), Carrot, Cucumber",
+    description:
+      "Lean turkey breast strips seasoned and wrapped in crisp lettuce leaves with a light peanut sauce.",
+    ingredients:
+      "Turkey breast, Lettuce leaves, Peanut sauce (light), Carrot, Cucumber",
     servingSize: "3 wraps",
     calories: 350,
     prepTime: "15-20 mins",
@@ -2622,7 +2901,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/healthy/healthy13.jpg",
     restaurant: "Root & Stem",
-    description: "Soft baked sweet potato served with a dollop of Greek yogurt and a sprinkle of cinnamon.",
+    description:
+      "Soft baked sweet potato served with a dollop of Greek yogurt and a sprinkle of cinnamon.",
     ingredients: "Sweet potato, Greek yogurt, Cinnamon, Honey (optional)",
     servingSize: "One large potato",
     calories: 280,
@@ -2638,8 +2918,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/healthy/healthy14.jpg",
     restaurant: "Breakfast Fit",
-    description: "Fluffy omelet made with only egg whites and filled with bell peppers, spinach, and mushrooms.",
-    ingredients: "Egg whites, Bell peppers, Spinach, Mushrooms, Onion, Salt, Pepper",
+    description:
+      "Fluffy omelet made with only egg whites and filled with bell peppers, spinach, and mushrooms.",
+    ingredients:
+      "Egg whites, Bell peppers, Spinach, Mushrooms, Onion, Salt, Pepper",
     servingSize: "Two eggs worth",
     calories: 200,
     prepTime: "10-15 mins",
@@ -2654,7 +2936,8 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/healthy/healthy15.jpg",
     restaurant: "Basic Health",
-    description: "A simple, clean side of perfectly cooked brown rice and steamed broccoli florets.",
+    description:
+      "A simple, clean side of perfectly cooked brown rice and steamed broccoli florets.",
     ingredients: "Brown rice, Broccoli, Olive oil, Salt, Lemon juice",
     servingSize: "Side bowl",
     calories: 350,
@@ -2670,7 +2953,8 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/healthy/healthy16.jpg",
     restaurant: "Low Carb Kitchen",
-    description: "Scrambled paneer (cottage cheese) cooked with onion, tomato, and spices. High protein, low carb.",
+    description:
+      "Scrambled paneer (cottage cheese) cooked with onion, tomato, and spices. High protein, low carb.",
     ingredients: "Paneer, Onion, Tomato, Green chilies, Cumin, Turmeric, Ghee",
     servingSize: "Single serving",
     calories: 400,
@@ -2686,8 +2970,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/healthy/healthy17.jpg",
     restaurant: "Middle East Munchies",
-    description: "Creamy homemade hummus served with cucumber slices, carrot sticks, and whole wheat pita bread.",
-    ingredients: "Chickpeas, Tahini, Lemon juice, Olive oil, Cucumber, Carrot, Whole wheat pita",
+    description:
+      "Creamy homemade hummus served with cucumber slices, carrot sticks, and whole wheat pita bread.",
+    ingredients:
+      "Chickpeas, Tahini, Lemon juice, Olive oil, Cucumber, Carrot, Whole wheat pita",
     servingSize: "Appetizer/Snack",
     calories: 390,
     prepTime: "10 mins (ready to serve)",
@@ -2702,7 +2988,8 @@ const foodDatabase = [
     rating: 4.8,
     image: "https://foodish-api.com/images/healthy/healthy18.jpg",
     restaurant: "Ocean Delights",
-    description: "Fresh shrimp 'cooked' in lime juice and mixed with diced mango, avocado, and cilantro. Light and vibrant.",
+    description:
+      "Fresh shrimp 'cooked' in lime juice and mixed with diced mango, avocado, and cilantro. Light and vibrant.",
     ingredients: "Shrimp, Lime juice, Mango, Avocado, Red onion, Cilantro",
     servingSize: "Single serving",
     calories: 300,
@@ -2718,8 +3005,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/healthy/healthy19.jpg",
     restaurant: "Wholesome Bowls",
-    description: "Hot, wholesome oatmeal topped with almonds, walnuts, pumpkin seeds, and a touch of honey.",
-    ingredients: "Rolled oats, Water/Milk, Almonds, Walnuts, Pumpkin seeds, Honey",
+    description:
+      "Hot, wholesome oatmeal topped with almonds, walnuts, pumpkin seeds, and a touch of honey.",
+    ingredients:
+      "Rolled oats, Water/Milk, Almonds, Walnuts, Pumpkin seeds, Honey",
     servingSize: "Medium bowl",
     calories: 350,
     prepTime: "10-15 mins",
@@ -2734,8 +3023,10 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/healthy/healthy20.jpg",
     restaurant: "Root & Stem",
-    description: "Nutty pearl barley cooked with a medley of finely chopped root vegetables and herbs.",
-    ingredients: "Pearl barley, Carrots, Celery, Onion, Vegetable broth, Parsley",
+    description:
+      "Nutty pearl barley cooked with a medley of finely chopped root vegetables and herbs.",
+    ingredients:
+      "Pearl barley, Carrots, Celery, Onion, Vegetable broth, Parsley",
     servingSize: "Medium bowl",
     calories: 340,
     prepTime: "25-35 mins",
@@ -2750,8 +3041,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/healthy/healthy21.jpg",
     restaurant: "The Health Spot",
-    description: "Grilled chicken, crisp romaine lettuce, croutons, and Parmesan with a lighter Caesar dressing.",
-    ingredients: "Grilled chicken, Romaine lettuce, Whole wheat croutons, Parmesan, Light Caesar dressing",
+    description:
+      "Grilled chicken, crisp romaine lettuce, croutons, and Parmesan with a lighter Caesar dressing.",
+    ingredients:
+      "Grilled chicken, Romaine lettuce, Whole wheat croutons, Parmesan, Light Caesar dressing",
     servingSize: "Large bowl",
     calories: 480,
     prepTime: "15-20 mins",
@@ -2766,7 +3059,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/healthy/healthy22.jpg",
     restaurant: "Wok & Fit",
-    description: "Traditional Japanese soup with savory miso paste, soft tofu cubes, and seaweed. Light and umami-rich.",
+    description:
+      "Traditional Japanese soup with savory miso paste, soft tofu cubes, and seaweed. Light and umami-rich.",
     ingredients: "Miso paste, Tofu, Seaweed (Wakame), Dashi stock, Scallions",
     servingSize: "Small bowl",
     calories: 80,
@@ -2782,7 +3076,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/healthy/healthy23.jpg",
     restaurant: "Snack & Go",
-    description: "Steamed edamame pods tossed in sea salt and chili flakes. High-protein, quick, and spicy snack.",
+    description:
+      "Steamed edamame pods tossed in sea salt and chili flakes. High-protein, quick, and spicy snack.",
     ingredients: "Edamame pods, Sea salt, Chili flakes, Sesame oil",
     servingSize: "Medium bowl",
     calories: 200,
@@ -2798,7 +3093,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/healthy/healthy24.jpg",
     restaurant: "Deli Fresh",
-    description: "Toasted whole wheat pita bread served with a side of hummus and fresh sliced cucumber and tomatoes.",
+    description:
+      "Toasted whole wheat pita bread served with a side of hummus and fresh sliced cucumber and tomatoes.",
     ingredients: "Whole wheat pita, Hummus, Cucumber, Tomato, Olive oil",
     servingSize: "1 pita + side",
     calories: 420,
@@ -2814,8 +3110,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/healthy/healthy25.jpg",
     restaurant: "Wholesome Bowls",
-    description: "A creamy, comforting soup made with fresh broccoli and low-fat cheddar cheese. Guilt-free comfort.",
-    ingredients: "Broccoli, Vegetable broth, Low-fat milk, Low-fat cheddar cheese, Onion, Flour (for thickening)",
+    description:
+      "A creamy, comforting soup made with fresh broccoli and low-fat cheddar cheese. Guilt-free comfort.",
+    ingredients:
+      "Broccoli, Vegetable broth, Low-fat milk, Low-fat cheddar cheese, Onion, Flour (for thickening)",
     servingSize: "Large bowl",
     calories: 300,
     prepTime: "15-20 mins",
@@ -2832,7 +3130,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/snacks/snack1.jpg",
     restaurant: "Fry Junction",
-    description: "Crispy golden fries tossed in a spicy peri-peri seasoning. Served with a tangy dipping sauce.",
+    description:
+      "Crispy golden fries tossed in a spicy peri-peri seasoning. Served with a tangy dipping sauce.",
     ingredients: "Potatoes, Cooking oil, Peri-peri seasoning, Salt",
     servingSize: "Medium portion",
     calories: 480,
@@ -2848,8 +3147,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/snacks/snack2.jpg",
     restaurant: "The Tender Co.",
-    description: "Three pieces of breaded, tender, juicy chicken strips, perfectly fried and served with honey mustard dipping sauce.",
-    ingredients: "Chicken breast strips, Breadcrumbs, Flour, Eggs, Seasoning, Honey mustard sauce",
+    description:
+      "Three pieces of breaded, tender, juicy chicken strips, perfectly fried and served with honey mustard dipping sauce.",
+    ingredients:
+      "Chicken breast strips, Breadcrumbs, Flour, Eggs, Seasoning, Honey mustard sauce",
     servingSize: "3 pieces",
     calories: 550,
     prepTime: "10-15 mins",
@@ -2864,8 +3165,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/snacks/snack3.jpg",
     restaurant: "Chaat Corner",
-    description: "Spicy and crunchy roasted peanuts mixed with chopped onion, tomato, chili, and a dash of lemon juice. A quick, flavorful bar snack.",
-    ingredients: "Roasted peanuts, Onion, Tomato, Green chili, Lemon juice, Chaat masala, Coriander",
+    description:
+      "Spicy and crunchy roasted peanuts mixed with chopped onion, tomato, chili, and a dash of lemon juice. A quick, flavorful bar snack.",
+    ingredients:
+      "Roasted peanuts, Onion, Tomato, Green chili, Lemon juice, Chaat masala, Coriander",
     servingSize: "Small bowl",
     calories: 350,
     prepTime: "5 mins",
@@ -2880,7 +3183,8 @@ const foodDatabase = [
     rating: 4.2,
     image: "https://foodish-api.com/images/snacks/snack4.jpg",
     restaurant: "Fry Junction",
-    description: "Thick-cut onion slices, battered and deep-fried to golden perfection. Served with ketchup.",
+    description:
+      "Thick-cut onion slices, battered and deep-fried to golden perfection. Served with ketchup.",
     ingredients: "Onion rings, Flour, Batter mix, Cooking oil, Salt, Ketchup",
     servingSize: "Large basket",
     calories: 520,
@@ -2896,8 +3200,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/snacks/snack5.jpg",
     restaurant: "Chaat Corner",
-    description: "Two triangular pastries filled with spiced potatoes and peas, deep-fried until golden. Served with sweet and mint chutney.",
-    ingredients: "Maida (flour), Potatoes, Peas, Cumin, Coriander, Green chili, Chutney",
+    description:
+      "Two triangular pastries filled with spiced potatoes and peas, deep-fried until golden. Served with sweet and mint chutney.",
+    ingredients:
+      "Maida (flour), Potatoes, Peas, Cumin, Coriander, Green chili, Chutney",
     servingSize: "Two pieces",
     calories: 400,
     prepTime: "10-15 mins",
@@ -2912,7 +3218,8 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/snacks/snack6.jpg",
     restaurant: "The Bread Factory",
-    description: "Soft bread sticks brushed with garlic butter and topped with melted mozzarella cheese.",
+    description:
+      "Soft bread sticks brushed with garlic butter and topped with melted mozzarella cheese.",
     ingredients: "Bread dough, Garlic butter, Mozzarella cheese, Herbs",
     servingSize: "4 sticks",
     calories: 450,
@@ -2928,8 +3235,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/snacks/snack7.jpg",
     restaurant: "The Tender Co.",
-    description: "Breaded and fried fish strips, crunchy on the outside and tender inside. Served with tartar sauce.",
-    ingredients: "Fish fillets, Breadcrumbs, Egg, Flour, Seasoning, Tartar sauce",
+    description:
+      "Breaded and fried fish strips, crunchy on the outside and tender inside. Served with tartar sauce.",
+    ingredients:
+      "Fish fillets, Breadcrumbs, Egg, Flour, Seasoning, Tartar sauce",
     servingSize: "5 pieces",
     calories: 500,
     prepTime: "10-15 mins",
@@ -2944,7 +3253,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/snacks/snack8.jpg",
     restaurant: "Chaat Corner",
-    description: "Sweet corn kernels mixed with butter, salt, pepper, and a dash of lime juice. Simple and satisfying.",
+    description:
+      "Sweet corn kernels mixed with butter, salt, pepper, and a dash of lime juice. Simple and satisfying.",
     ingredients: "Sweet corn, Butter, Salt, Pepper, Lime juice, Coriander",
     servingSize: "Small cup",
     calories: 250,
@@ -2960,7 +3270,8 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/snacks/snack9.jpg",
     restaurant: "Fry Junction",
-    description: "Crispy fried sticks of gooey, stretchy mozzarella cheese. Served with marinara sauce.",
+    description:
+      "Crispy fried sticks of gooey, stretchy mozzarella cheese. Served with marinara sauce.",
     ingredients: "Mozzarella cheese, Breadcrumbs, Flour, Marinara sauce",
     servingSize: "4 pieces",
     calories: 420,
@@ -2976,7 +3287,8 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/snacks/snack10.jpg",
     restaurant: "Fry Junction",
-    description: "Thick-cut potato wedges seasoned heavily with chili powder and herbs. Crunchy outside, soft inside.",
+    description:
+      "Thick-cut potato wedges seasoned heavily with chili powder and herbs. Crunchy outside, soft inside.",
     ingredients: "Potato wedges, Spices (Chili powder, Paprika), Oil, Salt",
     servingSize: "Medium portion",
     calories: 450,
@@ -2992,7 +3304,8 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/snacks/snack11.jpg",
     restaurant: "Fried Fowl",
-    description: "Bite-sized pieces of crispy fried chicken, perfect for sharing.",
+    description:
+      "Bite-sized pieces of crispy fried chicken, perfect for sharing.",
     ingredients: "Chicken pieces, Batter, Flour, Seasoning, Cooking oil",
     servingSize: "Medium bowl",
     calories: 580,
@@ -3008,8 +3321,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/snacks/snack12.jpg",
     restaurant: "Chaat Corner",
-    description: "A popular Indian street food made of puffed rice, vegetables, and a tangy tamarind sauce.",
-    ingredients: "Puffed rice (Murmura), Sev, Onion, Tomato, Tamarind chutney, Mint chutney, Chaat masala",
+    description:
+      "A popular Indian street food made of puffed rice, vegetables, and a tangy tamarind sauce.",
+    ingredients:
+      "Puffed rice (Murmura), Sev, Onion, Tomato, Tamarind chutney, Mint chutney, Chaat masala",
     servingSize: "Small bowl",
     calories: 280,
     prepTime: "5 mins (ready to serve)",
@@ -3024,8 +3339,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/snacks/snack13.jpg",
     restaurant: "Crispy Corners",
-    description: "Smaller, crispy versions of the classic spring roll, served with sweet chili sauce.",
-    ingredients: "Spring roll wrappers, Cabbage, Carrot, Onion, Sweet chili sauce",
+    description:
+      "Smaller, crispy versions of the classic spring roll, served with sweet chili sauce.",
+    ingredients:
+      "Spring roll wrappers, Cabbage, Carrot, Onion, Sweet chili sauce",
     servingSize: "6 pieces",
     calories: 350,
     prepTime: "10-15 mins",
@@ -3040,8 +3357,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/snacks/snack14.jpg",
     restaurant: "Wrap & Roll",
-    description: "Spicy chicken tikka wrapped in a soft paratha (flatbread) with onions and chutneys.",
-    ingredients: "Paratha, Chicken tikka, Onion slices, Mint chutney, Mayonnaise, Spices",
+    description:
+      "Spicy chicken tikka wrapped in a soft paratha (flatbread) with onions and chutneys.",
+    ingredients:
+      "Paratha, Chicken tikka, Onion slices, Mint chutney, Mayonnaise, Spices",
     servingSize: "Single roll",
     calories: 650,
     prepTime: "10-15 mins",
@@ -3056,7 +3375,8 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/snacks/snack15.jpg",
     restaurant: "Chaat Corner",
-    description: "Hollow, crispy spheres (puris) filled with spiced mashed potatoes and served with flavored tamarind water (pani).",
+    description:
+      "Hollow, crispy spheres (puris) filled with spiced mashed potatoes and served with flavored tamarind water (pani).",
     ingredients: "Puri, Potato, Chickpeas, Tamarind water (Pani), Mint, Spices",
     servingSize: "6 pieces",
     calories: 150,
@@ -3072,7 +3392,8 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/snacks/snack16.jpg",
     restaurant: "Heat Zone",
-    description: "Jalapeño peppers filled with cream cheese, breaded, and deep-fried to a fiery crunch.",
+    description:
+      "Jalapeño peppers filled with cream cheese, breaded, and deep-fried to a fiery crunch.",
     ingredients: "Jalapeño peppers, Cream cheese, Cheddar, Breadcrumbs, Oil",
     servingSize: "4 pieces",
     calories: 400,
@@ -3088,8 +3409,10 @@ const foodDatabase = [
     rating: 4.4,
     image: "https://foodish-api.com/images/snacks/snack17.jpg",
     restaurant: "Desi Burger House",
-    description: "Spicy scrambled paneer (bhurji) served inside two soft buttered bread rolls (pav).",
-    ingredients: "Paneer, Onion, Tomato, Spices, Green chilies, Pav (bread roll), Butter",
+    description:
+      "Spicy scrambled paneer (bhurji) served inside two soft buttered bread rolls (pav).",
+    ingredients:
+      "Paneer, Onion, Tomato, Spices, Green chilies, Pav (bread roll), Butter",
     servingSize: "Two pavs",
     calories: 550,
     prepTime: "15-20 mins",
@@ -3104,8 +3427,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/snacks/snack18.jpg",
     restaurant: "Taco 'n' Patty",
-    description: "Crispy tortilla chips topped with melted cheese sauce, salsa, sour cream, and jalapeños.",
-    ingredients: "Tortilla chips, Cheese sauce, Salsa, Sour cream, Black olives, Jalapeños",
+    description:
+      "Crispy tortilla chips topped with melted cheese sauce, salsa, sour cream, and jalapeños.",
+    ingredients:
+      "Tortilla chips, Cheese sauce, Salsa, Sour cream, Black olives, Jalapeños",
     servingSize: "Large plate",
     calories: 750,
     prepTime: "10-15 mins",
@@ -3120,7 +3445,8 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/snacks/snack19.jpg",
     restaurant: "Local Bakery",
-    description: "Flaky puff pastry filled with a simple, savory mix of spiced potatoes and vegetables.",
+    description:
+      "Flaky puff pastry filled with a simple, savory mix of spiced potatoes and vegetables.",
     ingredients: "Puff pastry dough, Potato, Peas, Carrot, Spices, Oil",
     servingSize: "Single piece",
     calories: 300,
@@ -3136,8 +3462,10 @@ const foodDatabase = [
     rating: 4.5,
     image: "https://foodish-api.com/images/snacks/snack20.jpg",
     restaurant: "The Grill Master",
-    description: "Tender pieces of marinated chicken grilled on skewers, served with a tangy dip.",
-    ingredients: "Chicken cubes, Marinade (Yogurt, Spices), Bell peppers, Onion, Dipping sauce",
+    description:
+      "Tender pieces of marinated chicken grilled on skewers, served with a tangy dip.",
+    ingredients:
+      "Chicken cubes, Marinade (Yogurt, Spices), Bell peppers, Onion, Dipping sauce",
     servingSize: "2 skewers",
     calories: 380,
     prepTime: "15-20 mins",
@@ -3152,8 +3480,10 @@ const foodDatabase = [
     rating: 4.6,
     image: "https://foodish-api.com/images/snacks/snack21.jpg",
     restaurant: "Chaat Corner",
-    description: "Flat, crispy puris topped with mashed potatoes, chutneys, onion, and a generous heap of 'sev' (crispy noodles).",
-    ingredients: "Flat puri, Potato, Onion, Sev, Tamarind chutney, Mint chutney",
+    description:
+      "Flat, crispy puris topped with mashed potatoes, chutneys, onion, and a generous heap of 'sev' (crispy noodles).",
+    ingredients:
+      "Flat puri, Potato, Onion, Sev, Tamarind chutney, Mint chutney",
     servingSize: "6 pieces",
     calories: 320,
     prepTime: "5 mins (ready to serve)",
@@ -3168,7 +3498,8 @@ const foodDatabase = [
     rating: 4.1,
     image: "https://foodish-api.com/images/snacks/snack22.jpg",
     restaurant: "American Pies",
-    description: "Five small hot dogs dipped in a cornmeal batter and fried. Served with mustard.",
+    description:
+      "Five small hot dogs dipped in a cornmeal batter and fried. Served with mustard.",
     ingredients: "Hot dogs, Cornmeal batter, Oil for frying, Mustard",
     servingSize: "5 pieces",
     calories: 450,
@@ -3184,8 +3515,10 @@ const foodDatabase = [
     rating: 4.3,
     image: "https://foodish-api.com/images/snacks/snack23.jpg",
     restaurant: "Local Eats",
-    description: "Crispy fried onion fritters made with gram flour (besan) and spices. A monsoon classic, served with chutney.",
-    ingredients: "Onion, Gram flour (Besan), Rice flour, Spices, Green chili, Oil for frying",
+    description:
+      "Crispy fried onion fritters made with gram flour (besan) and spices. A monsoon classic, served with chutney.",
+    ingredients:
+      "Onion, Gram flour (Besan), Rice flour, Spices, Green chili, Oil for frying",
     servingSize: "Medium portion",
     calories: 480,
     prepTime: "10-15 mins",
@@ -3200,8 +3533,10 @@ const foodDatabase = [
     rating: 4.0,
     image: "https://foodish-api.com/images/snacks/snack24.jpg",
     restaurant: "Crispy Corners",
-    description: "Spiced mashed potato and vegetable patties, coated in breadcrumbs and lightly fried. Served with mint dip.",
-    ingredients: "Potato, Mixed vegetables, Breadcrumbs, Spices, Oil, Mint chutney",
+    description:
+      "Spiced mashed potato and vegetable patties, coated in breadcrumbs and lightly fried. Served with mint dip.",
+    ingredients:
+      "Potato, Mixed vegetables, Breadcrumbs, Spices, Oil, Mint chutney",
     servingSize: "Two pieces",
     calories: 350,
     prepTime: "10-15 mins",
@@ -3216,8 +3551,10 @@ const foodDatabase = [
     rating: 4.7,
     image: "https://foodish-api.com/images/snacks/snack25.jpg",
     restaurant: "The Carnivore Club",
-    description: "Thin strips of dried, seasoned beef, marinated in a smoky and spicy sauce. High protein snack.",
-    ingredients: "Beef strips, Soy sauce, Worcestershire sauce, Brown sugar, Red pepper flakes, Smoked paprika",
+    description:
+      "Thin strips of dried, seasoned beef, marinated in a smoky and spicy sauce. High protein snack.",
+    ingredients:
+      "Beef strips, Soy sauce, Worcestershire sauce, Brown sugar, Red pepper flakes, Smoked paprika",
     servingSize: "50g portion",
     calories: 220,
     prepTime: "5 mins (ready to serve)",
