@@ -7,7 +7,7 @@ const foodDatabase = [
     category: "pizza",
     price: 250,
     rating: 4.5,
-    image: "assetsimages\first.jpg",
+    image: "assets\images\first.jpg",
     restaurant: "Spice Garden",
     description:
       "Classic Italian pizza with fresh tomatoes, mozzarella cheese, and basil leaves on a thin crust base. Authentic taste straight from Naples with premium ingredients.",
